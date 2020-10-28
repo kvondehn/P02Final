@@ -8,14 +8,14 @@
 .container
 {
   display: grid;
-  height: 100vh;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  height: 60rem;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: .1fr 1fr 1fr;
   grid-template-areas: 
-    "nav nav nav"
-    "main main main"
-    "content1 content2 content3"
-    "footer footer footer";
+    "nav nav nav nav nav"
+    "main main main main main"
+    "content1 content2 content2 content2 content3"
+    "footer footer footer footer footer";
   grid-gap: 0.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 800; 
@@ -87,7 +87,7 @@ footer
   height: 100rem;
 }
 
-@media only screen and (max-width: 550px)
+@media only screen and (max-width: 43em)
 {
   .container
   {
