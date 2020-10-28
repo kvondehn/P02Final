@@ -7,23 +7,24 @@
 
 .container
 {
-  display: grid;
-  height: 60rem;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: .1fr 1fr 1fr;
-  grid-template-areas: 
-    "nav nav nav nav nav"
-    "main main main main main"
-    "content1 content2 content2 content2 content3"
-    "footer footer footer footer footer";
-  grid-gap: 0.2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800; 
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: black; 
-  text-align: center;
-  
+    display: grid;
+    height: 60rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+      
+      font-family: "Roboto", sans-serif;
+      font-weight: 800; 
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: black; 
+      text-align: center;
 }
 
 nav
@@ -87,20 +88,19 @@ footer
   height: 100rem;
 }
 
-@media only screen and (max-width: 43em)
+@media only screen and (min-width: 54em)
 {
   .container
   {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
       
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: .1fr 1fr 1fr;
+      grid-template-areas: 
+        "nav nav nav nav nav"
+        "main main main main main"
+        "content1 content2 content2 content2 content3"
+        "footer footer footer footer footer";
+
+     
   }
 }
