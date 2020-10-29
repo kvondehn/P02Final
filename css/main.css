@@ -13,6 +13,15 @@ h1 {
 }
 
 
+
+
+
+
+
+
+
+
+
 .container
 {
     display: grid;
@@ -34,46 +43,6 @@ h1 {
       font-size: 1rem;
       color: black; 
       text-align: center;
-}
-/* HEADING STYLING */
-
-h1
-{
-  font-size: 3rem;
-  color: azure;
-}
-
-h2
-{
-
-}
-
-h3
-{
-
-}
-
-h4
-{
-
-}
-
-flex-container
-{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-heading
-{
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  text-align: center;
 }
     /* NAVIGATION STYLING */
             nav
@@ -140,12 +109,14 @@ flex-container
 main
 {
   background-image: url(../images/cofee.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   overflow: hidden;
+
 }
 
 main > img {
@@ -219,8 +190,6 @@ img {
     padding: 10px 10px 10px;
 }
 
-
-
         footer
         {
           background: grey;
@@ -229,6 +198,10 @@ img {
           padding-top: var(--main-padding);
         }
 
+        /* .homepage
+        {
+          height: 100rem;
+        } */
         /* TABLET RESPONSIVENESS  */
         @media only screen and (min-width: 54em) {
          h1 {
