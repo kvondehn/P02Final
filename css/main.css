@@ -4,6 +4,24 @@
  --main-padding: 5px; */
 }
 
+
+h1 {
+    color: #Fefae0;
+    font-size: 3em ;
+    text-align: left;
+    padding: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 .container
 {
     display: grid;
@@ -29,11 +47,11 @@
     /* NAVIGATION STYLING */
             nav
             {
-            background: #ffd390;
+            background: #Fefae0;
             grid-area: nav;
             border-radius: var(--main-radius);
             padding-top: var(--main-padding);
-            float: none;
+       
             display: block;
             position: fixed;
             width: 100%;
@@ -45,8 +63,10 @@
                 text-decoration: none;
                 margin: 0;
                 padding: 0.75rem;
+                padding-left: 5rem;
                 /* removes ugly dots */
                 list-style: none; 
+                float: left;
             }
 
             nav li {
@@ -88,7 +108,10 @@
             }
 main
 {
-  background: #45ffff;
+  background-image: url(../images/cofee.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -153,27 +176,43 @@ img {
   overflow: hidden;
 }
 
-.content-container
+.content-container1
 {
   background-color: #ffd390;
   padding: 10px 10px 10px;
 }
+.content-container2 {
+    background-color:#606C38 ;
+    padding: 10px 10px 10px;
+}
+.content-container3 {
+    background-color:#4a070c ;
+    padding: 10px 10px 10px;
+}
+
+
 
         footer
         {
-          background: #1de9b6;
+          background: grey;
           grid-area: footer;
             border-radius: var(--main-radius);
           padding-top: var(--main-padding);
         }
 
-        .homepage
+        /* .homepage
         {
           height: 100rem;
-        }
+        } */
         /* TABLET RESPONSIVENESS  */
-        @media only screen and (min-width: 54em)
-        {
+        @media only screen and (min-width: 54em) {
+         h1 {
+                color: #Fefae0;
+                font-size: 4em ;
+                text-align: left;
+                padding: 5rem;
+            }
+            
           .container
           {
               
@@ -193,11 +232,17 @@ img {
 /* DESKTOP RESPONSIVENESS */
 @media only screen and (min-width: 75em)
 {
+    h1 {
+        color: #Fefae0;
+        font-size: 5em ;
+        text-align: left;
+        padding: 6rem;
+    }
   .container
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em 40em 30em 2em;
+      grid-template-rows: 3em 40em 30em 1em;
       grid-template-areas: 
         "nav nav nav nav nav nav"
         "main main main main main main"
