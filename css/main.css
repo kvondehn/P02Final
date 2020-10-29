@@ -83,7 +83,7 @@ main
 {
   background: #45ffff;
   grid-area: main;
-    border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
@@ -99,7 +99,7 @@ main
 {
   background: #6fffd2;
   grid-area: content1;
-    border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
@@ -107,7 +107,7 @@ main
 {
   background: #64fdda;
   grid-area: content2;
-    border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
@@ -138,6 +138,7 @@ footer
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      /* grid-template-rows: 3.5em 30em 20em 20em 20em 2em; */
       grid-template-rows: 3.5em 30em 20em 20em 20em 2em;
       grid-template-areas: 
         "nav nav nav nav nav"
@@ -156,13 +157,15 @@ footer
   .container
   {
       
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em 40em 20em 2em;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 3.5em 40em 20em 20em 20em 2em;
       grid-template-areas: 
-        "nav nav nav nav nav nav"
-        "main main main main main main"
-        "content1 content1 content2 content2 content3 content3"
-        "footer footer footer footer footer footer";
+        "nav nav nav nav nav"
+        "main main main main main"
+        "content1 content1 content1 content1 content1"
+        "content2 content2 content2 content2 content2"
+        "content3 content3 content3 content3 content3"
+        "footer footer footer footer footer";
   }
  
 
