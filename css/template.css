@@ -1,9 +1,16 @@
+:root
+{
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+
 .container
 {
     display: grid;
     height: 60rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em 20em 20em 20em 20em 2em;;
+    grid-template-rows: 4em 20em 20em 20em 20em 2em;;
     grid-template-areas:
       "nav"
       "main"
@@ -19,66 +26,15 @@
       color: black; 
       text-align: center;
 }
-    /* NAVIGATION STYLING */
-            nav
-            {
-            background: #ffd390;
-            grid-area: nav;
-            border-radius: var(--main-radius);
-            padding-top: var(--main-padding);
-            float: none;
-            display: block;
-            position: fixed;
-            width: 100%;
-            align-items: stretch;
-            z-index: 1;
-            
-            }
-            nav ul {
-                text-decoration: none;
-                margin: 0;
-                padding: 0.75rem;
-                /* removes ugly dots */
-                list-style: none; 
-            }
 
-            nav li {
-                display: inline-block;
-                position: relative;
-                font-size: 1.5rem;
-                margin-left: 1rem;
-                margin-right: 1rem;
-            }
-            nav a
-            {
-            text-decoration: none;
-            color: #bc6c25;
-            }
-            nav a:hover
-            {
-                color: #4a070c;
-                transition: ease-in-out 200ms;
-            }
+nav
+{
+  background: #89ffff;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
 
-            nav a::before
-            {
-                content:'';
-                display: block;
-                height: 3px;
-                /* 100% of actual list item */
-                background-color:#4a070c;
-
-                position: absolute;
-                top: 1.5rem;
-                width: 0%;
-
-                transition: all ease-in-out 200ms;
-            }
-
-            nav a:hover::before
-            {
-                width:100%;
-            }
 main
 {
   background: #45ffff;
@@ -131,14 +87,14 @@ footer
 {
   height: 100rem;
 }
-/* TABLET RESPONSIVENESS  */
+
 @media only screen and (min-width: 54em)
 {
   .container
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3.5em 30em 20em 20em 20em 2em;
+      grid-template-rows: 4em 30em 20em 20em 20em 2em;
       grid-template-areas: 
         "nav nav nav nav nav"
         "main main main main main"
@@ -149,15 +105,13 @@ footer
   }
 
 }
-
-/* DESKTOP RESPONSIVENESS */
 @media only screen and (min-width: 75em)
 {
   .container
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3.5em 40em 20em 20em 20em 2em;
+      grid-template-rows: 3em 40em 20em 20em 20em 2em;
       grid-template-areas: 
         "nav nav nav nav nav"
         "main main main main main"
