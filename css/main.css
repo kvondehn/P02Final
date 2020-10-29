@@ -156,15 +156,13 @@ footer
   .container
   {
       
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3.5em 40em 20em 20em 20em 2em;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 3em 40em 20em 2em;
       grid-template-areas: 
-        "nav nav nav nav nav"
-        "main main main main main"
-        "content1 content1 content1 content1 content1"
-        "content2 content2 content2 content2 content2"
-        "content3 content3 content3 content3 content3"
-        "footer footer footer footer footer";
+        "nav nav nav nav nav nav"
+        "main main main main main main"
+        "content1 content1 content2 content2 content3 content3"
+        "footer footer footer footer footer footer";
   }
  
 
