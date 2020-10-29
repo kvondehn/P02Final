@@ -10,7 +10,7 @@
     display: grid;
     height: 60rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-rows: 4em 20em 20em 20em 20em 2em;;
     grid-template-areas:
       "nav"
       "main"
@@ -94,13 +94,32 @@ footer
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: .1fr 1fr 1fr;
+      grid-template-rows: 4em 30em 20em 20em 20em 2em;
       grid-template-areas: 
         "nav nav nav nav nav"
         "main main main main main"
-        "content1 content2 content2 content2 content3"
+        "content1 content1 content1 content1 content1"
+        "content2 content2 content2 content2 content2"
+        "content3 content3 content3 content3 content3"
         "footer footer footer footer footer";
-
-     
   }
+
+}
+@media only screen and (min-width: 75em)
+{
+  .container
+  {
+      
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 3em 40em 20em 20em 20em 2em;
+      grid-template-areas: 
+        "nav nav nav nav nav"
+        "main main main main main"
+        "content1 content1 content1 content1 content1"
+        "content2 content2 content2 content2 content2"
+        "content3 content3 content3 content3 content3"
+        "footer footer footer footer footer";
+  }
+ 
+
 }
