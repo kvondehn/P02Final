@@ -112,6 +112,7 @@ img {
   grid-area: content1;
     border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  overflow: hidden;
 }
 
 #content2
@@ -120,6 +121,7 @@ img {
   grid-area: content2;
     border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  overflow: hidden;
 }
 
 #content3
@@ -128,6 +130,7 @@ img {
   grid-area: content3;
     border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  overflow: hidden;
 }
 
 footer
