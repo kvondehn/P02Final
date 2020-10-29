@@ -62,8 +62,8 @@ h1 {
             nav li {
                 display: inline-block;
                 position: relative;
-                font-size: 1.25rem;
-                margin-left: 0rem;
+                font-size: 1.5rem;
+                margin-left: 1rem;
                 margin-right: 1rem;
             }
             nav a
@@ -86,7 +86,7 @@ h1 {
                 background-color:#4a070c;
 
                 position: absolute;
-                top: 1.25rem;
+                top: 1.5rem;
                 width: 0%;
 
                 transition: all ease-in-out 200ms;
@@ -138,7 +138,7 @@ img {
   background-repeat: no-repeat;
   grid-area: content1;
   border-radius: 20px;
-  margin: .25rem .25rem .25rem .25rem;
+  margin: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
@@ -150,7 +150,7 @@ img {
   background-repeat: no-repeat;
   grid-area: content2;
   border-radius: 20px;
-  margin: .25rem .25rem .25rem .25rem;
+  margin: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
@@ -162,22 +162,22 @@ img {
   background-repeat: no-repeat;
   grid-area: content3;
   border-radius: 20px;
-  margin: .25rem .25rem .25rem .25rem;
+  margin: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
 .content-container1
 {
   background-color: #ffd390;
-  padding: .25rem .25rem .25rem;
+  padding: 10px 10px 10px;
 }
 .content-container2 {
     background-color:#606C38 ;
-    padding: .25rem .25rem .25rem;
+    padding: 10px 10px 10px;
 }
 .content-container3 {
-    background-color:#612227 ;
-    padding: .25rem .25rem .25rem;
+    background-color:#4a070c ;
+    padding: 10px 10px 10px;
 }
 
         footer
@@ -200,9 +200,6 @@ img {
                 text-align: left;
                 padding: 5rem;
             }
-        ul {
-            padding: 5rem;
-        }
             
           .container
           {
@@ -229,7 +226,6 @@ img {
         text-align: left;
         padding: 6rem;
     }
-
   .container
   {
       
