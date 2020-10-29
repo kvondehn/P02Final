@@ -1,9 +1,16 @@
+:root
+{
+ /* --main-radius: 5px;
+ --main-padding: 5px; */
+}
+
 .container
 {
     display: grid;
     height: 60rem;
     grid-template-columns: 1fr;
     grid-template-rows: 3em 20em 20em 20em 20em 2em;
+    /* grid-gap: 0.25rem; */
     grid-template-areas:
       "nav"
       "main"
@@ -14,7 +21,7 @@
       
       font-family: "Roboto", sans-serif;
       font-weight: 800; 
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       font-size: 1rem;
       color: black; 
       text-align: center;
@@ -109,63 +116,75 @@ img {
   padding-top: var(--main-padding);
 } */
 
+/* HOME PAGE CONTENT STYLING */
 #content1
 {
-  background-image: url(../images/CoffeeThings.jpg);
+  background-image: url(../images/squareImage1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: content1;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
 #content2
 {
-  background: #64fdda;
+  background: url(../images/preroll.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: content2;
-    border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
 #content3
 {
-  background: #73ffba;
+  background: url(../images/squareImage2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: content3;
-    border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
-footer
-{
-  background: #1de9b6;
-  grid-area: footer;
-    border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
 
-.homepage
-{
-  height: 100rem;
-}
-/* TABLET RESPONSIVENESS  */
-@media only screen and (min-width: 54em)
-{
-  .container
-  {
-      
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em 30em 20em 20em 20em 2em;
-      grid-template-areas: 
-        "nav nav nav nav nav"
-        "main main main main main"
-        "content1 content1 content1 content1 content1"
-        "content2 content2 content2 content2 content2"
-        "content3 content3 content3 content3 content3"
-        "footer footer footer footer footer";
-  }
 
-}
+        footer
+        {
+          background: #1de9b6;
+          grid-area: footer;
+            border-radius: var(--main-radius);
+          padding-top: var(--main-padding);
+        }
+
+        .homepage
+        {
+          height: 100rem;
+        }
+        /* TABLET RESPONSIVENESS  */
+        @media only screen and (min-width: 54em)
+        {
+          .container
+          {
+              
+              grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 3em 30em 20em 20em 20em 2em;
+              grid-template-areas: 
+                "nav nav nav nav nav"
+                "main main main main main"
+                "content1 content1 content1 content1 content1"
+                "content2 content2 content2 content2 content2"
+                "content3 content3 content3 content3 content3"
+                "footer footer footer footer footer";
+          }
+
+        }
 
 /* DESKTOP RESPONSIVENESS */
 @media only screen and (min-width: 75em)
