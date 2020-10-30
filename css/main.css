@@ -9,7 +9,26 @@ h1 {
     color: #Fefae0;
     font-size: 3em ;
     text-align: left;
-    padding: 3rem;
+    padding: 1rem;
+}
+h2{
+  font-weight: 600;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 60rem;
+    padding: 5%;
+    /* margin-block-start: 0%;
+    margin-block-end: 100%; */
+
+}
+p {
+  font-weight: 400;
+    font-size: 1.15em;
+    text-align: left;
+    max-width: 60rem;
+    padding:5%;
+    padding-top: 0%;
+
 }
 
 .container
@@ -17,11 +36,12 @@ h1 {
     display: grid;
     height: 60rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em 20em 20em 20em 20em 2em;
+    grid-template-rows: 3em max-content max-content 20em 20em 20em 1em;
     /* grid-gap: 0.25rem; */
     grid-template-areas:
       "nav"
       "main"
+      "content0"
       "content1"
       "content2"
       "content3"
@@ -130,6 +150,13 @@ img {
 } */
 
 /* HOME PAGE CONTENT STYLING */
+
+#content0 {
+  grid-area: content0;
+  background-color: #Fefae0;
+
+}
+
 #content1
 {
   background-image: url(../images/squareImage1.jpg);
@@ -137,8 +164,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   grid-area: content1;
-  border-radius: 20px;
-  margin: .25rem .25rem .25rem .25rem;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
@@ -149,8 +175,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   grid-area: content2;
-  border-radius: 20px;
-  margin: .25rem .25rem .25rem .25rem;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
@@ -161,8 +186,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   grid-area: content3;
-  border-radius: 20px;
-  margin: .25rem .25rem .25rem .25rem;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
@@ -193,25 +217,38 @@ img {
           height: 100rem;
         } */
         /* TABLET RESPONSIVENESS  */
-        @media only screen and (min-width: 54em) {
+        @media screen and (min-width: 30em) {
          h1 {
-                color: #Fefae0;
                 font-size: 4em ;
-                text-align: left;
-                padding: 5rem;
+                padding: 10%;
+            }
+            h2 {
+              font-size: 2em;
+              padding: 10%;
+              padding-top: 5%;
+              padding-bottom: 5%;
+              margin: 0;
             }
         ul {
             padding: 5rem;
+        }
+        p {
+            font-size: 1.3em;
+            padding:10%;
+            padding-top: 0%;
+            padding-bottom: 5%;
+        
         }
             
           .container
           {
               
               grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 3em 30em 20em 20em 20em 2em;
+              grid-template-rows: 3em max-content max-content 20em 20em 20em 2em;
               grid-template-areas: 
                 "nav nav nav nav nav"
                 "main main main main main"
+                "content0 content0 content0 content0 content0"
                 "content1 content1 content1 content1 content1"
                 "content2 content2 content2 content2 content2"
                 "content3 content3 content3 content3 content3"
@@ -221,23 +258,34 @@ img {
         }
 
 /* DESKTOP RESPONSIVENESS */
-@media only screen and (min-width: 75em)
+@media screen and (min-width: 75em)
 {
     h1 {
-        color: #Fefae0;
         font-size: 5em ;
-        text-align: left;
-        padding: 6rem;
+        padding: 10%;
+    }
+    h2 {
+      font-size: 3em;
+      padding-top: 10%;
+      margin: 0;
     }
 
+        p {
+            font-size: 1.6em;
+            max-width: 60rem;
+            padding:10%;
+            padding-top: 0%;
+        
+        }
   .container
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em 40em 30em 1em;
+      grid-template-rows: 3em max-content max-content 30em 1em;
       grid-template-areas: 
         "nav nav nav nav nav nav"
         "main main main main main main"
+        "content0 content0 content0 content0 content0 content0"
         "content1 content1 content2 content2 content3 content3"
         "footer footer footer footer footer footer";
   }
