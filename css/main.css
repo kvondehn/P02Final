@@ -1,8 +1,8 @@
-/* :root
+:root
 {
- --main-radius: 5px;
- --main-padding: 5px;
-} */
+ /* --main-radius: 5px;
+ --main-padding: 5px; */
+}
 
 
 h1 {
@@ -82,8 +82,8 @@ p {
             nav li {
                 display: inline-block;
                 position: relative;
-                font-size: 1.25rem;
-                margin-left: 0rem;
+                font-size: 1.5rem;
+                margin-left: 1rem;
                 margin-right: 1rem;
             }
             nav a
@@ -106,7 +106,7 @@ p {
                 background-color:#4a070c;
 
                 position: absolute;
-                top: 1.25rem;
+                top: 1.5rem;
                 width: 0%;
 
                 transition: all ease-in-out 200ms;
@@ -193,15 +193,15 @@ img {
 .content-container1
 {
   background-color: #ffd390;
-  padding: .25rem .25rem .25rem;
+  padding: 10px 10px 10px;
 }
 .content-container2 {
     background-color:#606C38 ;
-    padding: .25rem .25rem .25rem;
+    padding: 10px 10px 10px;
 }
 .content-container3 {
-    background-color:#612227 ;
-    padding: .25rem .25rem .25rem;
+    background-color:#4a070c ;
+    padding: 10px 10px 10px;
 }
 
         footer
