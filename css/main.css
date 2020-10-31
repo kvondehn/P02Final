@@ -57,12 +57,12 @@ p
     padding-left: 10%;
 }
 
-.container
+#home-container
 {
     display: grid;
-    height: 60rem;
+    height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em max-content max-content 20em 20em 20em 1em;
+    grid-template-rows: 3em max-content max-content 20em 20em 20em 20em 1em;
     /* grid-gap: 0.25rem; */
     grid-template-areas:
       "nav"
@@ -79,6 +79,33 @@ p
       font-size: 1rem;
       color: black; 
       text-align: center;
+}
+
+#shop-container
+{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3em max-content max-content 30em 30em 30em 30em 30em 30em 2em;
+  /* grid-gap: 0.25rem; */
+  grid-template-areas:
+    "nav"
+    "main"
+    "content0"
+    "content1"
+    "content2"
+    "content3"
+    "content4"
+    "content5"
+    "content6"
+    "footer";
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 800; 
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    color: black; 
+    text-align: center;
 }
     /* NAVIGATION STYLING */
             nav
@@ -145,9 +172,23 @@ p
             {
                 width:100%;
             }
-main
+
+#home-main
 {
   background-image: url(../images/cofee.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  overflow: hidden;
+
+}
+
+#shop-main
+{
+  background-image: url(../images/weed-shop.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,7 +229,7 @@ img {
 
 #content1
 {
-  background-image: url(../images/squareImage1.jpg);
+  background-image: url(../images/bud.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,7 +240,7 @@ img {
 
 #content2
 {
-  background: url(../images/preroll.jpg);
+  background: url(../images/pres.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,7 +251,7 @@ img {
 
 #content3
 {
-  background: url(../images/squareImage2.jpg);
+  background: url(../images/oils.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -219,9 +260,44 @@ img {
   overflow: hidden;
 }
 
+#content4
+{
+  background-image: url(../images/pax.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  grid-area: content4;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
+#content5
+{
+  background: url(../images/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: content5;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
+#content6
+{
+  background: url(../images/accessories.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: content6;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
 .content-container1
 {
   background-color: #ffd390;
+  box-shadow: 2px 2px 5px #8a8a8a81;
+  border-right: black;
   padding: 10px 10px 10px;
 }
 .content-container2 {
@@ -232,6 +308,14 @@ img {
     background-color:#F57F3A ;
     padding: 10px 10px 10px;
 }
+
+.content-container4
+{
+  background-color: #ffc773;
+  border-right: black;
+  padding: 10px 10px 10px;
+}
+
 
         footer
         {
@@ -262,6 +346,7 @@ img {
         h4
         {
           font-size: 2em;
+          font-weight: 300;
         }
 
         ul
@@ -276,7 +361,7 @@ img {
             padding-bottom: 5%;
         }
             
-          .container
+          #home-container
           {
               
               grid-template-columns:1fr 1fr 1fr 1fr 1fr;
@@ -298,7 +383,8 @@ img {
 {
     h1 
     {
-      font-size: 7em ;
+      font-size: 7.5em;
+      line-height: 1em;
       padding: 10%;
     }
 
@@ -326,20 +412,35 @@ img {
     p {
         font-size: 1.5em;
         font-weight: 300;
-        max-width: 60%;
+        max-width: 50%;
       }
 
 
-  .container
+  #home-container
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em max-content max-content 30em 1em;
+      grid-template-rows: 3em max-content max-content 30em 30em 1em;
       grid-template-areas: 
         "nav nav nav nav nav nav"
         "main main main main main main"
         "content0 content0 content0 content0 content0 content0"
         "content1 content1 content2 content2 content3 content3"
+        "content1 content1 content2 content2 content3 content3"
+        "footer footer footer footer footer footer";
+  }
+
+  #shop-container
+  {
+      
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 3em max-content max-content 30em 30em 1em;
+      grid-template-areas: 
+        "nav nav nav nav nav nav"
+        "main main main main main main"
+        "content0 content0 content0 content0 content0 content0"
+        "content1 content1 content2 content2 content3 content3"
+        "content4 content4 content5 content5 content6 content6"
         "footer footer footer footer footer footer";
   }
  
