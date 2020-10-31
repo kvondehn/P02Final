@@ -4,24 +4,39 @@
  --main-padding: 5px; */
 }
 
+/* DEFAULT SETTINGS FOR THE MOBILE VERSION  */
 
-h1 {
+h1 
+{
     color: #Fefae0;
-    font-size: 3em ;
+    font-size: 4em ;
     text-align: left;
     padding: 1rem;
 }
-h2{
-  font-weight: 600;
-    font-size: 1.5em;
-    text-align: left;
-    max-width: 60rem;
-    padding: 5%;
+
+h2
+{
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 2em;
+  text-align: left;
+  max-width: 60rem;
     /* margin-block-start: 0%;
     margin-block-end: 100%; */
 
 }
-p {
+
+h3
+{
+  font-weight: 300;
+  text-align: left;
+  padding-left: 10%;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+p 
+{
   font-weight: 400;
     font-size: 1.15em;
     text-align: left;
@@ -218,26 +233,37 @@ img {
         } */
         /* TABLET RESPONSIVENESS  */
         @media screen and (min-width: 30em) {
-         h1 {
-                font-size: 4em ;
+          
+        h1  {
+                font-size: 5em ;
                 padding: 10%;
             }
-            h2 {
-              font-size: 2em;
+
+        h2 
+            {
+              font-size: 3em;
               padding: 10%;
-              padding-top: 5%;
-              padding-bottom: 5%;
-              margin: 0;
+              padding-top: 2.5%;
+              padding-bottom: 2.5%;
+              margin: 0;          
             }
-        ul {
+
+        h3
+        {
+          font-size: 2em;
+        }
+
+        ul
+        {
             padding: 5rem;
         }
+        
         p {
-            font-size: 1.3em;
-            padding:10%;
+            font-size: 1.5em;
+            font-weight: 300;
+            padding-left:10%;
             padding-top: 0%;
             padding-bottom: 5%;
-        
         }
             
           .container
@@ -260,23 +286,32 @@ img {
 /* DESKTOP RESPONSIVENESS */
 @media screen and (min-width: 75em)
 {
-    h1 {
-        font-size: 5em ;
-        padding: 10%;
+    h1 
+    {
+      font-size: 7em ;
+      padding: 10%;
     }
-    h2 {
+
+    h2 
+    {
       font-size: 3em;
-      padding-top: 10%;
       margin: 0;
     }
 
-        p {
-            font-size: 1.6em;
-            max-width: 60rem;
-            padding:10%;
-            padding-top: 0%;
-        
-        }
+    h3
+    {
+      font-size: 2em;
+      font-weight: 350;
+    }
+
+    p {
+        font-size: 1.5em;
+        font-weight: 300;
+        max-width: 60rem;
+        padding-left: 10%;
+      }
+
+
   .container
   {
       
