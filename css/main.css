@@ -9,24 +9,37 @@
 h1 
 {
     color: #Fefae0;
-    font-size: 4em ;
+    font-size: 3.85em ;
     text-align: left;
-    padding: 1rem;
+    padding-left: 10%;
+    padding-top: 1.5em;
 }
 
 h2
 {
+  font-size: 2.25em;
   font-weight: 500;
   line-height: 1em;
-  font-size: 2em;
   text-align: left;
-  max-width: 60rem;
+  max-width: 90%;
+  padding-left: 10%;
+  padding-top: 1.25em;
+  padding-bottom: 0.25em;
   /* padding-top: 30em; */
+}
+
+h3
+{
+  font-size: 2em;
+  margin: 0;
+  padding-left: 10%;
+  text-align: left;
 }
 
 h4
 {
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 400;
   text-align: left;
   padding-left: 10%;
   padding-bottom: 1em;
@@ -35,13 +48,13 @@ h4
 
 p 
 {
-  font-weight: 400;
+    font-weight: 300;
     font-size: 1.15em;
     text-align: left;
-    max-width: 60rem;
-    padding:5%;
+    max-width: 80%;
     padding-top: 0%;
-
+    padding-bottom: 1em;
+    padding-left: 10%;
 }
 
 .container
@@ -240,9 +253,6 @@ img {
         h2 
             {
               font-size: 3em;
-              padding: 10%;
-              padding-top: 2.5%;
-              padding-bottom: 2.5%;
               margin: 0;          
             }
 
@@ -259,7 +269,6 @@ img {
         p {
             font-size: 1.5em;
             font-weight: 300;
-            padding-left:10%;
             padding-top: 0%;
             padding-bottom: 5%;
         }
@@ -314,8 +323,6 @@ img {
     p {
         font-size: 1.5em;
         font-weight: 300;
-        max-width: 60rem;
-        padding-left: 10%;
       }
 
 
