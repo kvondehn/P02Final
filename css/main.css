@@ -87,13 +87,14 @@ p
             grid-area: nav;
             border-radius: var(--main-radius);
             padding-top: var(--main-padding);
+            box-shadow: 2px 2px 5px #8a8a8a81;
             display: block;
             position: fixed;
             width: 100%;
             align-items: stretch;
             z-index: 1;
-            
             }
+            
             nav ul {
                 text-decoration: none;
                 display: inline;
