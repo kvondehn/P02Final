@@ -21,12 +21,10 @@ h2
   font-size: 2em;
   text-align: left;
   max-width: 60rem;
-    /* margin-block-start: 0%;
-    margin-block-end: 100%; */
-
+  /* padding-top: 30em; */
 }
 
-h3
+h4
 {
   font-weight: 300;
   text-align: left;
@@ -215,7 +213,7 @@ img {
     padding: 10px 10px 10px;
 }
 .content-container3 {
-    background-color:#4a070c ;
+    background-color:#F57F3A ;
     padding: 10px 10px 10px;
 }
 
@@ -248,7 +246,7 @@ img {
               margin: 0;          
             }
 
-        h3
+        h4
         {
           font-size: 2em;
         }
@@ -294,13 +292,22 @@ img {
 
     h2 
     {
-      font-size: 3em;
+      font-size: 3.5em;
       margin: 0;
     }
 
     h3
     {
       font-size: 2em;
+      font-weight: 600;
+      text-align: center;
+      padding: 2.5%;
+      margin: 0;
+    }
+
+    h4
+    {
+      font-size: 1.75em;
       font-weight: 350;
     }
 
