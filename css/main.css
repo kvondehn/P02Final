@@ -1,8 +1,12 @@
-/* :root {*/
+/* :root {
 
- /* --main-radius: 5px;
- --main-padding: 5px; */
-/* } */
+ zoom: 09
+} */
+
+body
+{
+  zoom: 100%;
+}
 
 /* DEFAULT SETTINGS FOR THE MOBILE VERSION  */
 
@@ -263,6 +267,10 @@ img {
   transition: 0.5s ease;
   cursor: pointer;
 
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content2
@@ -276,6 +284,10 @@ img {
   overflow: hidden;
   transition: 0.5s ease;
   cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
 
 }
 
@@ -291,6 +303,10 @@ img {
   transition: 0.5s ease;
   cursor: pointer;
 
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content4
@@ -304,6 +320,10 @@ img {
   overflow: hidden;
   transition: 0.5s ease;
   cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
 
 }
 
@@ -319,6 +339,10 @@ img {
   transition: 0.5s ease;
   cursor: pointer;
 
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content6
@@ -332,6 +356,10 @@ img {
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
 
 }
 
