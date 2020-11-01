@@ -12,36 +12,28 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="scripts/hamburger.js"> </script>
 
 
 </head>
 
 <body>
-  <script> 
-    function myFunction() {
-  var x = document.getElementById("theNav");
-  if (x.className === "navigation") {
-    x.className += " responsive";
-  } else {
-    x.className = "navigation";
-  }
-}
-</script>
+
     <div id="home-container">
         <nav class="navigation" id="theNav">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <li class="menuitem menuclose"><a href="index.html">Home</a></li>
+                <li class="menuitem menuclose"><a href="about.html"class="active">About</a></li>
+                <li class="menuitem menuclose"><a href="shop.html">Shop</a></li>
+                <li class="menuitem menuclose"><a href="contact.html">Contact</a></li>
+                <li class="menuitem menuclose"><a href="checkout.html">Checkout</a></li>
+                <li id="hamburger"> <a href="#" class="icon" onclick="myFunction()">
                       <i class="fa fa-bars"></i>
                      </a>
                 </li>
             </ul>
         </nav>
+
 
         <main id="home-main">
             <!-- <img src="images/cofee.jpg" alt="coffee image"> -->
@@ -49,8 +41,7 @@
         </main>
 
         <div id="content0"> 
-          <h2> North America’s <br>
-            Premier Smoke Friendly Cafe <br>
+          <h2> History
           </h2>
 
           <h4>
@@ -58,10 +49,32 @@
           </h4>
 
           <p> 
-            The New Amsterdam Cafe is an authentic cannabis consumption lounge that promotes the responsible use of marijuana. 
-            Maintaining a living room vibe, in an upbeat and urban setting, The New Amsterdam Cafe is a warm, chill, stigma-free, 
-            and offers a safe environment for those who enjoy cannabis and/or quality coffee.
+            The New Amsterdam Cafe has been loving and promoting cannabis since the beginning. 
+            With the establishment of the cafe in 1998, we have twenty years of experience providing 
+            and promoting a cannabis-friendly culture. The New Amsterdam Cafe has been a safe haven 
+            for smoking cannabis during a time of stigma and uncertainty. We have had the amazing 
+            opportunity to witness firsthand how cannabis has gradually become accepted in both a 
+            social and legal realm throughout the years. The world can look to us for an example of 
+            cannabis consumption in daily lives and society, and how it impacts communities. We are 
+            willing and want to be the brain trust of the modern cannabis movement.
+            
           </p>
+          <p>
+
+            The New Amsterdam Cafe is the coolest cannabis consumption lounge in North America. 
+            Cannabis lovers from all across the continent pilgrimage north to the OG spot that started it all. 
+            What sets us apart from the new competition is that we love to pass on our product knowledge. 
+            We are Industry leaders providing industry leading experiences and knowledge. 
+            We are proud to be the lounge that the rest of North America looks to for innovative designs,
+             trends and all things cannabis. The New Amsterdam Cafe is more than just a brand, it’s a lifestyle.
+
+          </p>
+          <p>
+            The art on the walls, the rotating displays in the front window, the hand-crafted food and beverages, 
+            and even our awesome selection of merch, has been carefully curated by the members of our community 
+            for the members of our community.
+          </p>
+
         </div>
 
         <a id="content1" href="shop.html">
