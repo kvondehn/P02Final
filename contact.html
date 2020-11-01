@@ -6,28 +6,37 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
 
     <!-- <link href="css/main.css" rel="stylesheet"> -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scripts/hamburger.js"> </script>
+
 
 
 </head>
 
 <body>
-
+  <script> 
+    function myFunction() {
+  var x = document.getElementById("theNav");
+  if (x.className === "navigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "navigation";
+  }
+}
+</script>
     <div id="home-container">
         <nav class="navigation" id="theNav">
             <ul>
-                <li class="menuitem menuclose"><a href="index.html" class="active">Home</a></li>
-                <li class="menuitem menuclose"><a href="about.html">About</a></li>
-                <li class="menuitem menuclose"><a href="shop.html">Shop</a></li>
-                <li class="menuitem menuclose"><a href="contact.html">Contact</a></li>
-                <li class="menuitem menuclose"><a href="checkout.html">Checkout</a></li>
-                <li id="hamburger"> <a href="#" class="icon" onclick="myFunction()">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                       <i class="fa fa-bars"></i>
                      </a>
                 </li>
@@ -36,7 +45,7 @@
 
         <main id="home-main">
             <!-- <img src="images/cofee.jpg" alt="coffee image"> -->
-            <h1> New <br> Amsterdam <br> Cafe </h1>
+            <h1> Contact </h1>
         </main>
 
         <div id="content0"> 
@@ -73,7 +82,7 @@
           </div>
         </a>
 
-        <footer> <p> New Amsterdam Cafe </p></footer>
+        <footer> New Amsterdam Cafe </footer>
     </div>
 
 </body>

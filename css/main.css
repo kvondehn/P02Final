@@ -1,8 +1,12 @@
-/* :root {*/
+/* :root {
 
- /* --main-radius: 5px;
- --main-padding: 5px; */
-/* } */
+ zoom: 09
+} */
+
+body
+{
+  zoom: 100%;
+}
 
 /* DEFAULT SETTINGS FOR THE MOBILE VERSION  */
 
@@ -45,6 +49,18 @@ h4
   padding-bottom: 1em;
   margin: 0;
 }
+
+h5
+{
+  font-size: 0.85em;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 10%;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+
 
 p 
 {
@@ -105,6 +121,27 @@ footer > p {
     "content4"
     "content5"
     "content6"
+    "footer";
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 800; 
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    color: black; 
+    text-align: center;
+}
+
+#product-container
+{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3em 30em 30em 2em;
+  /* grid-gap: 0.25rem; */
+  grid-template-areas:
+    "nav"
+    "content0"
+    "content1"
     "footer";
     
     font-family: "Roboto", sans-serif;
@@ -253,7 +290,12 @@ img {
 #content0 {
   grid-area: content0;
   background-color: #Fefae0;
+}
 
+#content-product-descp
+{
+  grid-area: content-product;
+  background-color: #Fefae0;
 }
 
 #content1
@@ -265,6 +307,13 @@ img {
   grid-area: content1;
   /* border-radius: 20px; */
   overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content2
@@ -276,6 +325,13 @@ img {
   grid-area: content2;
   /* border-radius: 20px; */
   overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content3
@@ -287,6 +343,13 @@ img {
   grid-area: content3;
   /* border-radius: 20px; */
   overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content4
@@ -298,6 +361,13 @@ img {
   grid-area: content4;
   /* border-radius: 20px; */
   overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content5
@@ -309,6 +379,13 @@ img {
   grid-area: content5;
   /* border-radius: 20px; */
   overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 #content6
@@ -320,6 +397,13 @@ img {
   grid-area: content6;
   /* border-radius: 20px; */
   overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
 }
 
 .content-container1
@@ -327,22 +411,24 @@ img {
   background-color: #ffd390;
   box-shadow: 2px 2px 5px #8a8a8a81;
   border-right: black;
-  padding: 10px 10px 10px;
+  padding: 20px 20px 20px;
 }
 .content-container2 {
     background-color:#606C38 ;
-    padding: 10px 10px 10px;
+    padding: 20px 20px 20px;
+
 }
 .content-container3 {
     background-color:#F57F3A ;
-    padding: 10px 10px 10px;
+    padding: 20px 20px 20px;
+
 }
 
 .content-container4
 {
   background-color: #ffc773;
   border-right: black;
-  padding: 10px 10px 10px;
+  padding: 20px 20px 20px;
 }
 footer
 {
@@ -357,7 +443,22 @@ footer > p {
   margin: 0;
 }
 
+/* HOVER FEATURE */
 
+#content1:hover, #content2:hover, #content3:hover, #content4:hover, #content5:hover, #content6:hover
+{
+  transform: scale(1.01);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+        footer
+        {
+          background: grey;
+          grid-area: footer;
+            border-radius: var(--main-radius);
+          padding-top: var(--main-padding);
+        }
 
         /* .homepage
         {
@@ -431,7 +532,7 @@ footer > p {
 
     h3
     {
-      font-size: 2.5em;
+      font-size: 2.25em;
       font-weight: 600;
       text-align: center;
       padding: 2.5%;
@@ -484,6 +585,23 @@ footer > p {
         "content1 content1 content2 content2 content3 content3"
         "content4 content4 content5 content5 content6 content6"
         "footer footer footer footer footer footer";
+  }
+
+  #product-container
+  {
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3em 0em 50em 4em;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "content-product content-product content-product content-product content-product"
+    "content1 content1 content1 content0 content0"
+    "footer footer footer footer footer";
+
+  }
+
+  #product-paragraph
+  {
+    max-width: 80%;
   }
  
 
