@@ -11,19 +11,26 @@
     <!-- <link href="css/main.css" rel="stylesheet"> -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/hamburger.js"> </script>
+
 
 </head>
 
 <body>
 
     <div id="shop-container">
-        <nav class="navigation">
+        <nav class="navigation" id="theNav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
+                <li class="menuitem menuclose"><a href="index.html" class="active">Home</a></li>
+                <li class="menuitem menuclose"><a href="about.html">About</a></li>
+                <li class="menuitem menuclose"><a href="shop.html">Shop</a></li>
+                <li class="menuitem menuclose"><a href="contact.html">Contact</a></li>
+                <li class="menuitem menuclose"><a href="checkout.html">Checkout</a></li>
+                <li id="hamburger"> <a href="#" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                     </a>
+                </li>
             </ul>
         </nav>
 

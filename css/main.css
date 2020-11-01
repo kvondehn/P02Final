@@ -16,7 +16,7 @@ h1
     font-size: 3.85em ;
     text-align: left;
     padding-left: 10%;
-    padding-top: 1.5em;
+    padding-top: .5em;
 }
 
 h2
@@ -494,6 +494,7 @@ footer > p {
             padding-top: 0%;
             padding-bottom: 5%;
         }
+
             
 
       
@@ -555,9 +556,12 @@ footer > p {
       }
 
 
-      /* .navigation .icon {
+      .navigation .icon {
         display: none;
-       } */
+       }
+      .menuclose {
+        display: inline-block;
+      }
 
   #home-container
   {
