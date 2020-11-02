@@ -72,6 +72,22 @@ p
     padding-bottom: 1em;
     padding-left: 10%;
 }
+button {
+    appearance: button;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+}
 footer > p {
   font-size: 1em;
   padding: 0;
@@ -136,7 +152,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content 20em 20em 20em 20em 1em;
+  grid-template-rows: 3em max-content 20em 15em 15em 15em 1em;
   /* grid-gap: 0.25rem; */
   grid-template-areas:
     "nav"
@@ -277,6 +293,24 @@ img {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.addcart {
+  text-transform: capitalize;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem 2rem;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  background-color: #283618;
+  color: white;
+  border: none;
+
 }
 
 
@@ -629,10 +663,11 @@ footer > p {
   #product-container
   {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3em max-content 20em 1em;
+    grid-template-rows: 3em max-content 30em 20em 1em;
     grid-template-areas:
       "nav nav nav nav nav nav"
-      "content0 content0 content0 product1 product1 product1"
+      "content0 content0 content0 content0 content0 content0"
+      "product1 product1 product1 product1 product1 product1"
       "content1 content1 content2 content2 content3 content3"
       "footer footer footer footer footer footer";
     
