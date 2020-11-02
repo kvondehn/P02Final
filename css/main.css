@@ -131,12 +131,12 @@ footer > p {
     "nav"
     "main"
     "content0"
-    "content1"
-    "content2"
-    "content3"
-    "content4"
-    "content5"
-    "content6"
+    "product1"
+    "product2"
+    "product3"
+    "product4"
+    "product5"
+    "product6"
     "footer";
     
     font-family: "Roboto", sans-serif;
@@ -384,7 +384,7 @@ img {
 
 #content2
 {
-  background: url(../images/pres.jpg);
+  background: url(../images/headerImage.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -402,7 +402,7 @@ img {
 
 #content3
 {
-  background: url(../images/oils.jpg);
+  background: url(../images/squareImage3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -417,14 +417,62 @@ img {
   text-decoration: none;
 
 }
+#product1 {
+  background-image: url(../images/tangerine.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: product1;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  display: block;
+  color: black;
+  text-decoration: none;  
+}
 
-#content4
+#product2
+{
+  background: url(../images/pres.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: product2;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
+}
+
+#product3
+{
+  background: url(../images/oils.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: product3;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
+}
+
+#product4
 {
   background-image: url(../images/pax.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  grid-area: content4;
+  grid-area: product4;
   /* border-radius: 20px; */
   overflow: hidden;
   transition: 0.5s ease;
@@ -436,13 +484,13 @@ img {
 
 }
 
-#content5
+#product5
 {
   background: url(../images/coffee.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  grid-area: content5;
+  grid-area: product5;
   /* border-radius: 20px; */
   overflow: hidden;
   transition: 0.5s ease;
@@ -454,13 +502,13 @@ img {
 
 }
 
-#content6
+#product6
 {
   background: url(../images/accessories.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  grid-area: content6;
+  grid-area: product6;
   /* border-radius: 20px; */
   overflow: hidden;
   transition: 0.5s;
@@ -496,18 +544,7 @@ img {
   border-right: black;
   padding: 20px 20px 20px;
 }
-#product1 {
-  background-image: url(../images/tangerine.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-area: product1;
-  /* border-radius: 20px; */
-  overflow: hidden;
-  display: block;
-  color: black;
-  text-decoration: none;  
-}
+
 footer
 {
   background: lightgrey;
@@ -523,7 +560,8 @@ footer > p {
 
 /* HOVER FEATURE */
 
-#content1:hover, #content2:hover, #content3:hover, #content4:hover, #content5:hover, #content6:hover
+#content1:hover, #content2:hover, #content3:hover, #product1:hover, #product2:hover, #product3:hover, #product4:hover, #product5:hover, #product6:hover
+
 {
   transform: scale(1.01);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -600,9 +638,9 @@ footer > p {
                 "nav nav nav nav nav nav"
                 "main main main main main main"
                 "content0 content0 content0 content0 content0 content0"
-                "content1 content1 content1 content2 content2 content2"
-                "content3 content3 content3 content4 content4 content4"
-                "content5 content5 content5 content6 content6 content6"
+                "product1 product1 product1 product2 product2 product2"
+                "product3 product3 product3 product4 product4 product4"
+                "product5 product5 product5 product6 product6 product6"
                 "footer footer footer footer footer footer";
           }
 
@@ -698,8 +736,8 @@ footer > p {
         "nav nav nav nav nav nav"
         "main main main main main main"
         "content0 content0 content0 content0 content0 content0"
-        "content1 content1 content2 content2 content3 content3"
-        "content4 content4 content5 content5 content6 content6"
+        "product1 product1 product2 product2 product3 product3"
+        "product4 product4 product5 product5 product6 product6"
         "footer footer footer footer footer footer";
   }
 
