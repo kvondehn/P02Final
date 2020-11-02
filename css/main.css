@@ -87,7 +87,13 @@ button {
     background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
     box-sizing: border-box;
 }
-
+input[type=text] {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 footer > p {
   font-size: 1em;
   padding: 0;
@@ -170,6 +176,31 @@ footer > p {
     color: black; 
     text-align: center;
 }
+#checkout-container {
+  display: grid;
+  height: max-content;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3em max-content max-content max-content 2em;
+  grid-template-areas:
+    "nav"
+    "billing"
+    "payment"
+    "submitting"
+    "footer";
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+}
+#checkout-container  h3 {
+  padding: 0;
+  padding-bottom: 1rem;
+}
+.icon-container {
+  font-size: 24px;
+}
 
     /* NAVIGATION STYLING */
             nav
@@ -197,6 +228,7 @@ footer > p {
                 text-align: left;
                 float: left;
             }
+
 
             nav li {
                 position: relative;
@@ -517,6 +549,26 @@ img {
   display: block;
   color: black;
   text-decoration: none;
+
+}
+
+#billing {
+  grid-area: billing;
+  margin: 2em;
+  margin-bottom: 0;
+}
+#payment {
+  grid-area: payment;
+  margin: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+#submitting {
+  grid-area: submitting;
+  margin: 2em;
+  margin-top: 0;
+  margin-bottom: 3em;
 
 }
 
