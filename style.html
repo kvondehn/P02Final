@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/style-guide.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    
+    <header>
+
+      <div class="nav-container">
+
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+              </ul>
+          </nav>
+
+      </div>
+
+  </header>
+
+    
+
+      <h1>P01 - Style Guide Template<br> New Amsterdam Cafe</h1>
+      <h5>Designed by: Oscar Waizel and Kai von Dehn</h5>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <a href="#in-text_link"> Click Here </a>
+
+        <code> a:hover{
+          <br>
+          text-decoration: none;
+          <br>
+          background-color: blueviolet;
+          <br>
+          transition-duration: 0.3s;
+          <br>
+          -webkit-text-fill-color: white;
+          <br>
+        }
+        
+          <br>
+          <br>
+        a:focus{
+          <br>
+          background-color: coral;
+          <br>
+        }
+        </code>
+
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Nav Bar</h3>
+
+      <header>
+
+          <div class="nav-container">
+    
+              <nav>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Get Involved</a></li>
+                  </ul>
+              </nav>
+    
+          </div>
+
+      </header>
+
+      <code>
+        nav
+        {
+            float: right;
+        }
+        <br>
+        <br>
+        
+        nav a
+        {
+          text-decoration: none;
+          color: white;
+        }
+        <br>
+        <br>
+        
+        nav ul
+        {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            /* removes ugly dots */
+            list-style: none; 
+        }
+        <br>
+        <br>
+        
+        nav li
+        {
+            display: inline-block;
+            margin-left: 4.375rem; 
+            padding-top: 20px;
+            /*the position relative allows for the 
+            list item before element to be the width of
+            the list item text boxes and NOT
+            the entire width of the window */
+        
+            position: relative;
+        }
+        <br>
+        <br>
+        nav a:hover
+        {
+            color: rgb(1, 82, 85);
+            transition: ease-in-out 200ms;
+        }
+        <br>
+        <br>
+        nav a::before
+        {
+            content:'';
+            display: block;
+            height: 3px;
+            /* 100% of actual list item */
+            width: 100%;
+            background-color:rgb(0, 90, 94);
+        
+            position: absolute;
+            top: 2.5rem;
+            width: 0%;
+        
+            transition: all ease-in-out 200ms;
+        }
+        <br>
+        <br>
+        nav a:hover::before
+        {
+            width:100%;
+        }
+        <br>
+        <br>
+
+        /* clear fix and animation underline CSS trick RETRIEVED FROM https://youtu.be/8QKOaTYvYUA */
+
+
+
+      </code>
+        <!-- <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a> -->
+
+      </section>
+
+
+      <section class="element">
+
+        <h3>Buttons</h3>
+
+        <div class="submit_btn">
+          <button class="btn">Submit</button>
+        </div>
+
+        <div class="submit_btn">
+          <button class="btn btn2">Add to Cart</button>
+        </div>
+
+        <div class="submit_btn">
+          <button class="btn btn2">Learn More </button>
+        </div>
+
+        <div class="submit_btn">
+          <button class="btn btn3">Check Out </button>
+        </div>
+
+        <code> /* TUTORIAL FOR BUTTON EFFECT RETRIEVED FROM
+          https://www.youtube.com/watch?v=MLfAW55_4cY */
+        
+          <br>
+          <br>
+          .btn
+            {
+                border: 1px solid dodgerblue;
+                border-radius: 8px;
+                background: none;
+                padding: 10px 20px;
+                font-size: 20px;
+                cursor: pointer;
+                margin: 10px;
+                transition: 0.8s;
+                position: relative;
+                overflow: hidden;
+            }
+            <br>
+          <br>
+          .btn::before
+          {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: dodgerblue;
+            /* z-index -1 means its behind the button fram */
+            z-index: -1;
+            transition: 0.8s;
+            transition-timing-function: ease;
+            bottom: 0;
+            /* eases in transition */
+          }
+
+        
+        
+        </code>
+
+        <!-- <div class="reset_btn">
+          <button class="btn rst1">Submit</button>
+        </div> -->
+
+      </section>
+
+
+      <section class="element">
+
+        <h3>Text Input Field with Label</h3>
+
+        <!-- Retrieved from: https://www.w3schools.com/tags/tag_input.asp September 17, 2020 -->
+        <!--  -->
+
+        <p>Login Details</p>
+
+        <!-- Citation: TechincalCafe, HTML Tutorial 16 - Radio Buttons and Checkboxes (Form), Feb. 23 2012, Retrieved from https://www.youtube.com/watch?v=poEjvRJ6SAY&t=397s&ab_channel=TechnicalCafe, Sep. 22, 2020 -->
+
+        <form class="user_form" action="process.php" method="POST">
+
+          <fieldset class="account-info">
+
+            <label>
+              Username
+              <input type="text" name="username">
+            </label>
+            
+            <label>
+              Password
+              <input type="password" name="password">
+            </label>
+            
+          </fieldset>
+
+
+          <code>
+
+            <br>
+            /* 
+            <br>
+              BEGINNING OF STYLING WITH AID FROM CITED SOURCE:
+              <br>
+              <br>
+
+              Building Forms - Lesson 10, Retrieved from: https://learn.shayhowe.com/html-css/building-forms/
+
+              <br>
+            /*  */
+            <br>
+            <br>
+
+            form {
+              <br>
+              border: 1px solid #c6c7cc;
+              <br>
+              border-radius: 5px;
+              <br>
+              font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+              <br>
+              overflow: hidden;
+              <br>
+              width: 240px;
+              <br>
+            }
+            <br>
+            <br>
+          
+            input {
+              <br>
+              border-radius: 5px;
+              <br>
+              font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+              <br>
+              margin: 0;
+              <br>
+            }
+            <br>
+            <br>
+            
+            .account-info 
+            <br>
+            {
+              <br>
+              padding: 20px 20px 0 20px;
+              <br>
+            }
+            <br>
+            <br>
+            .account-info label 
+            <br>
+            {
+              <br>
+              color:black;
+              <br>
+              display: block;
+              <br>
+              font-weight: bold;
+              <br>
+              margin-bottom: 20px;
+              <br>
+            }
+            <br>
+            <br>
+            
+            .account-info input
+            <br> 
+            {
+              <br>
+              background: #fff;
+              <br>
+              border: 1px solid #c6c7cc;
+              <br>
+               box-shadow: inset 0 1px 1px rgba(3, 172, 202, 0.1);
+               <br>
+              color: #636466;
+              <br>
+              padding: 6px;
+              <br>
+              margin-top: 6px;
+              <br>
+              width: 100%;
+              <br>
+            }
+            <br>
+            <br>
+            /* END OF CITATION */
+            <br>
+            <br>
+            .account-info input:hover
+            <br>
+            {
+              <br>
+              background-color: gray;
+              <br>
+              opacity: 0.5;
+              <br>
+              transition: 0.5s ease;
+              <br>
+            }
+            <br>
+            <br>
+            .account-info input:focus
+            <br>
+            {
+              <br>
+              background-color: white;
+              <br>
+              opacity: 1;
+              <br>
+            }
+            <br>
+          </code>
+          
+          Over the Age of 19?:
+          <br>
+          <input type="radio" name="age"/> Yes
+          <br>
+          <input type="radio" name="age" /> No
+          <br>
+          <p></p>
+
+          Check all that Apply:
+          <p></p>
+          <input type="checkbox" name="cream"/> Cream
+          <p></p>
+          <input type="checkbox" name="sugar" /> Sugar
+          <p></p>
+          <!-- End of citation -->
+
+        </form>
+
+      </section>
+
+
+      <section class="element">
+
+        <h3>Image as a Link (Altered Hover) </h3>
+
+        <!--Assistance retrieved from: https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,add%20the%20height%20and%20width. -->
+
+        <a href="https://newamsterdamcafe.com/menu/">
+          <div class="img_container">
+            <img class="weed_image" alt="homepage" src="https://post.healthline.com/wp-content/uploads/2019/04/Weed_Orange_1200x628-facebook.jpg"
+             width="420" height="250">
+            <div class="img_overlay"></div>
+          </div>
+        </a>
+
+        <code>
+          <br>
+          .weed_image
+          <br>
+          {
+            <br>
+            display: block;
+            <br>
+          }
+          <br>
+          <br>
+          .img_container
+          <br>
+          {
+            position: relative;
+            <br>
+            width: 280px;
+            <br>
+          }
+          <br>
+          <br>
+          .img_overlay
+          <br>
+          {
+            <br>
+            position: absolute;
+            <br>
+            top: 0;
+            <br>
+            bottom: 0;
+            <br>
+            left: 0;
+            <br>
+            right: 0;
+            <br>
+            height: 100%;
+            <br>
+            width: 100%;
+            <br>
+            opacity: 0;
+            <br>
+            transition: 0.5s ease;
+            <br>
+            background-color: white;
+            <br>
+          }
+          <br>
+          <br>
+          .img_container:hover .img_overlay
+          <br>
+          {
+            <br>
+            opacity: 0.7;
+            <br>
+          }
+          <br>
+          <br>
+          source: 
+          <br>
+          w3schools.com, Image Overlay Fade, Retrieved from: https://www.w3schools.com/howto/howto_css_image_overlay.asp
+          
+        </code>
+
+        <!-- Retrieved September 17,2020 -->
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <div class="typography_wrapper">
+
+          <ul>
+            <li>
+              <div>
+                <h1 class="heading_margin">Heading One</h1>
+              </div>
+
+              <div>
+                <p class="font_details">64px/4em | Roboto Slab </p>
+              </div>
+
+              <div>
+                <p class="font_details">Weight: 700</p>
+              </div>
+                
+            </li>
+
+            <li>
+              <div>
+                <h2 class="heading_margin">Heading Two</h2>
+              </div>
+
+              <div>
+                <p class="font_details">54px/3.375em | Roboto</p>
+              </div>
+
+              <div>
+                <p class="font_details">Weight: 700 </p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h3 class="heading_margin">Heading Three</h3>
+              </div>
+
+              <div>
+                <p class="font_details">40px/2.5em | Roboto</p>
+              </div>
+
+              <div>
+                <p class="font_details">Weight: 300 </p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h4 class="heading_margin">Heading Four</h4>
+              </div>
+
+              <div>
+                <p class="font_details">36px/2.25em | Roboto</p>
+              </div>
+
+              <div>
+                <p class="font_details">Weight: 600 </p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h5 class="heading_margin">Heading Five</h5>
+              </div>
+
+              <div>
+                <p class="font_details">20px/1.25em | Roboto</p>
+              </div>
+
+              <div>
+                <p class="font_details">Weight: 500 </p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="element">
+        <h3 class="heading_margin">Paragraphs</h3>
+
+        <div>
+          <p class="font_details">18px/1.125em | Roboto</p>
+        </div>
+
+        <div>
+          <p class="font_details">Weight: 300 </p>
+        </div>
+
+        <p class="subtitle">
+          The New Amsterdam Cafe is an authentic cannabis consumption lounge that promotes the 
+          responsible use of marijuana. Maintaining a living room vibe, in an upbeat and urban 
+          setting, The New Amsterdam Cafe is a warm, chill, stigma-free, and safe environment 
+          for those who enjoy cannabis and/or quality coffee.
+        </p>
+
+       
+ 
+       <code>
+          .about_subtitle
+          {
+              margin-right: auto;
+              margin-top: auto;
+              position: relative;
+              color: black;
+              font-size: 1.2rem;
+              line-height: 30px;
+              padding-bottom: 1rem;
+          }
+          <br>
+          <br>
+          /* respond at 1025 pixels when shrinking page */
+          <br>
+          <br>
+          @media (min-width: 1025px)
+          {
+              .about_subtitle 
+              {
+                  margin-right: 0;
+                  width: 50%;
+              }
+          }
+          <br>
+          <br>
+
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <ol>
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+          <li>Fourth Item</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <section id="colour">
+      <h2>Colour</h2>
+
+      <section class="element">
+        <h3>Primary Colours</h3>
+
+        <div class="colour_container">
+          <div class="block">
+            <p>#606C38</p>
+          </div>
+    
+          <div class="block">
+            <p>#dda15e</p>
+          </div>
+    
+          <div class="block">
+            <p>#Fefae0</p>
+          </div>
+
+        </div>
+
+          <h3>Secondary Colours</h3>
+
+        <div class="sec_colour_container">
+
+          <div class="block">
+            <p> #283618</p>
+          </div>
+    
+          <div class="block">
+            <p>#bc6c25</p>
+          </div>
+
+          <div class="block">
+            <p>#4a070c</p>
+          </div>
+    
+        </div>
+
+        
+      </section>
+
+    </section>
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+      <section class="element product-list">
+
+        <h3>Product Listing</h3>
+
+        <section class="flex-container">
+
+          <div class="card">
+
+            <div id="argo">
+              <h4>Herbal<br> Vaporizer </h4>
+              <h5>Arizer ArGo</h5>
+              <p>$199.99</p>
+            </div>
+
+            <div>
+              <img src="images/argo.jpg" alt="Herbal Vaporizer Picture" class="product_image">
+            </div>
+
+            <div class="product_description">
+              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sint quo dicta eius inventore quia necessitatibus nihil ullam, ab dolores maxime quod delectus, ex nulla reprehenderit atque fugiat? Repudiandae, ipsa!</p>
+            </div>
+
+            <button class="btn btn3"> Add to Cart</button>
+            </div>
+
+          <div class="card">
+
+            <div id="preroll">
+              <h4> Pre<br> Rolls</h4>
+              <h5>White Widow Indica</h5>
+              <p>$8.99</p>
+            </div>
+
+            <div>
+              <img src="images/preroll.jpg" alt="Picture of pre-rolled joints" class="product_image">
+            </div>
+
+            <div class="product_description">
+              <p class="product_para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sint quo dicta eius inventore quia necessitatibus nihil ullam, ab dolores maxime quod delectus, ex nulla reprehenderit atque fugiat? Repudiandae, ipsa!</p>
+            </div>
+
+            <button class="btn btn3"> Add to Cart</button>
+          </div>
+
+          <div class="card">
+
+            <div id="sour_diesel">
+              <h4> Fresh<br> Flower </h4>
+              <h5>Sour Diesel</h5>
+              <p>$11.99/gram</p>
+            </div>
+
+            <div>
+              <img src="images/squareImage2.jpg" alt="Picture of marijuana plant" class="product_image">
+            </div>
+
+            <div class="product_description">
+              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sint quo dicta eius inventore quia necessitatibus nihil ullam, ab dolores maxime quod delectus, ex nulla reprehenderit atque fugiat? Repudiandae, ipsa!</p>
+            </div>
+
+            <button class="btn btn3"> Add to Cart</button>
+          </div>
+        
+        </section>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <!-- BEGINNING OF PAYMENT FORM-->
+
+        <!-- CITATION:
+          w3Schools, How TO - Checkout Form. (n.d.). Retrieved October 09, 2020, from https://www.w3schools.com/howto/howto_css_checkout_form.asp
+         -->
+        
+        <div class="row">
+
+          <div class="col-75">
+
+            <div class="container">
+
+              <form action="/action_page.php">
+        
+                <div class="row">
+
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="email">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> 301 W Hastings St.</label>
+                    <input type="text" id="adr" name="address" placeholder="Street Address">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="Vancouver">
+        
+                    <div class="row">
+
+                      <div class="col-50">
+                        <label for="state">Province</label>
+                        <input type="text" id="state" name="state" placeholder="BC">
+                      </div>
+
+                      <div class="col-50">
+                        <label for="zip">Postal Code</label>
+                        <input type="text" id="zip" name="zip" placeholder="VJK A19">
+                      </div>
+                      
+                    </div>
+
+                  </div>
+        
+                  <div class="col-50">
+
+                    <h3>Payment</h3>
+
+                    <label for="fname">Accepted Cards</label>
+
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Full Name">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+        
+                    <div class="row">
+
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="Year">
+                      </div>
+
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="999">
+                      </div>
+
+                    </div>
+                  </div>
+        
+                </div>
+
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                
+                <input type="submit" value="Proceed to Checkout" class="btn btn3">
+             
+              </form>
+            </div>
+          </div>
+        
+          <div class="col-25">
+
+            <div class="container">
+
+              <h3>Cart
+                <span class="price" style="color:black">
+
+                  <i class="fa fa-shopping-cart"></i>
+                  <b>3 items</b>
+
+                </span>
+              </h3>
+
+              <p><a href="#argo">Arizer Argo</a> <span class="price">$199.99</span></p>
+              <p><a href="#preroll">Pre Roll- White Widow</a> <span class="price">$8.99</span></p>
+              <p><a href="#sour_diesel">Sour Diesel- 1g</a> <span class="price">$11.99</span></p>
+              <hr>
+
+              <p>Total <span class="price" style="color:black"><b>$220.97</b></span></p>
+              <p>GST and PST<span class="price" style="color:black"><b>$26.52</b></span></p>
+
+              <hr>
+              <p>Order Total <span class="price" style="color:black"><b>$247.49</b></span></p>
+              
+              <input type="submit" value="Place Order" class="btn btn3">
+
+            </div>
+          </div>
+        </div>
+
+      <!-- END OF FORM SECTION-->
+
+       <!-- Re-CITATION:
+          w3Schools, How TO - Checkout Form. (n.d.). Retrieved October 09, 2020, from https://www.w3schools.com/howto/howto_css_checkout_form.asp
+         -->
+
+      </section>
+    </section>
+
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <section id="citations">
+      <h5>Citations</h5>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+
+    </section>
+
+  </body>
+</html>
