@@ -579,6 +579,32 @@ img {
 
 }
 
+#product1 {
+  background-image: url(../images/tangerine.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: product1;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  display: block;
+  color: black;
+  text-decoration: none;  
+}
+
+#bud-product {
+  background-image: url(../images/tangerine.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: product1;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  display: block;
+  color: black;
+  text-decoration: none;  
+}
+
 .filler
 {
   grid-area: filler;
@@ -880,7 +906,7 @@ footer > p {
     .addcart {
       margin-left: 20%;
     }
-        
+      
    
       footer > p {
         max-width: 100%;
