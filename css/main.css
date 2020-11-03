@@ -916,6 +916,9 @@ footer > p {
   #checkout-container h3 {
     text-align: left;
   }
+  #checkout-container label {
+    font-size: 1.5em;
+    font-weight: 300;
 
   #heading {
     margin-left: 8%;
@@ -939,5 +942,3 @@ footer > p {
 
 
  
-
-}
