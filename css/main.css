@@ -904,6 +904,9 @@ footer > p {
       "submitting submitting submitting submitting submitting submitting"
       "footer footer footer footer footer footer";
   }
+  #checkout-container nav {
+    margin-left: 0;
+  }
   #checkout-container h3 {
     text-align: left;
   }
@@ -911,9 +914,26 @@ footer > p {
     font-size: 1.5em;
 
   }
+  #heading {
+    margin-left: 15%;
+  }
+  #heading h2 {
+    margin-left: 0%;
+  }
   #payment {
     margin-top: 2em;
+    margin-right: 15%;
   }
+  #cart {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  #billing {
+    margin-left:15% ;
+}
+  
+
+
 
  
 
