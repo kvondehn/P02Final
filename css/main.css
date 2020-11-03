@@ -197,6 +197,29 @@ footer > p {
     color: black; 
     text-align: center;
 }
+#product-container2
+{
+  display: grid;
+  height: max-content;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3em max-content 20em 15em 15em 15em 2em;
+  /* grid-gap: 0.25rem; */
+  grid-template-areas:
+    "nav"
+    "content0"
+    "product2"
+    "content1"
+    "content2"
+    "content3"
+    "footer";
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 800; 
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    color: black; 
+    text-align: center;
+}
 #checkout-container {
   display: grid;
   height: max-content;
@@ -789,6 +812,19 @@ footer > p {
               "content3 content3 content3 content3 content3"
               "footer footer footer footer footer";
           }
+          #product-container2
+          {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 3em max-content 30em 20em 20em 20em 2em;
+            grid-template-areas:
+              "nav nav nav nav nav"
+              "content0 content0 content0 content0 content0"
+              "product2 product2 product2 product2 product2"
+              "content1 content1 content1 content1 content1"
+              "content2 content2 content2 content2 content2"
+              "content3 content3 content3 content3 content3"
+              "footer footer footer footer footer";
+          }
           #checkout-container {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 3em max-content max-content max-content max-content 2em;
@@ -936,6 +972,20 @@ footer > p {
       "footer footer footer footer footer footer";
     
   }
+  #product-container2
+  {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3em 5em max-content 30em 5em 30em 2em;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "filler2 filler2 filler2 filler2 filler2 filler2"
+      "content0 content0 content0 product2 product2 product2"
+      "content0 content0 content0 product2 product2 product2"
+      "filler filler filler filler filler filler"
+      "content1 content1 content2 content2 content3 content3"
+      "footer footer footer footer footer footer";
+    
+  }
   #product-paragraph
   {
     max-width: 60%;
@@ -977,6 +1027,9 @@ footer > p {
   }
   #billing {
     margin-left:16% ;
+}
+#filler #filler2 {
+  background-color: #Fefae0;
 }
 
   
