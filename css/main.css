@@ -578,6 +578,13 @@ img {
   text-decoration: none;
 
 }
+
+#filler
+{
+  grid-area: filler;
+  background-color: #Fefae0; 
+}
+
 #heading {
  grid-area: heading;
  display: block;
@@ -904,11 +911,12 @@ footer > p {
   #product-container
   {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3em max-content 30em 20em 2em;
+    grid-template-rows: 3em max-content 30em 10em 30em 2em;
     grid-template-areas:
       "nav nav nav nav nav nav"
       "content0 content0 content0 content0 content0 content0"
       "product1 product1 product1 product1 product1 product1"
+      "filler filler filler filler filler filler"
       "content1 content1 content2 content2 content3 content3"
       "footer footer footer footer footer footer";
     
