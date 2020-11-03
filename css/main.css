@@ -838,11 +838,29 @@ footer > p {
     }
 
     p {
-        font-size: 1.75em;
+        font-size: 1.5em;
+        padding-bottom: 1em;
         font-weight: 300;
-        max-width: 50%;
+        max-width: 60%;
         margin-bottom: 0;
       }
+
+    #home-para
+    {
+      padding-bottom: 3em;
+    }
+
+    #about-para
+    {
+      padding-bottom: 3em;
+    }
+
+    #shop-para
+    {
+      padding-bottom: 3em;
+    }
+
+   
       footer > p {
         max-width: 100%;
       }
