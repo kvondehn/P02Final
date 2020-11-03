@@ -223,7 +223,8 @@ footer > p {
 }
 
 .icon-container {
-  font-size: 24px;
+  font-size: 32px;
+  padding-bottom: 1rem;
 }
 
     /* NAVIGATION STYLING */
@@ -597,6 +598,7 @@ img {
   border-radius: .3em;
   padding: 1rem;
   background-color: #Fefae0 ;
+  height: fit-content;
 }
 #cart > h4 {
   padding-left: 0;
@@ -786,6 +788,10 @@ footer > p {
               "submitting submitting submitting submitting submitting submitting"
               "footer footer footer footer footer footer";
           }
+          #checkout-container label {
+            font-size: 1.5em;
+        
+          }
           #heading h2 {
             font-size: 3rem;
             margin: .75em;
@@ -899,7 +905,7 @@ footer > p {
     grid-template-areas:
       "nav nav nav nav nav nav"
       "heading heading heading heading heading heading"
-      "cart cart cart cart cart cart"
+      "billing billing billing cart cart cart"
       "billing billing billing payment payment payment"
       "submitting submitting submitting submitting submitting submitting"
       "footer footer footer footer footer footer";
@@ -910,26 +916,23 @@ footer > p {
   #checkout-container h3 {
     text-align: left;
   }
-  #checkout-container label {
-    font-size: 1.5em;
 
-  }
   #heading {
-    margin-left: 15%;
+    margin-left: 8%;
   }
   #heading h2 {
     margin-left: 0%;
   }
   #payment {
     margin-top: 2em;
-    margin-right: 15%;
+    margin-right: 16%;
   }
   #cart {
-    margin-left: 8%;
     margin-right: 8%;
+    width: 50%;
   }
   #billing {
-    margin-left:15% ;
+    margin-left:16% ;
 }
   
 
