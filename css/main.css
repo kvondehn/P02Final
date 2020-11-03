@@ -52,7 +52,7 @@ h4
 
 h5
 {
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 700;
   text-align: left;
   padding-left: 10%;
@@ -406,7 +406,7 @@ img {
     font-family: sans-serif;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.8s;
+    transition: 0.5s;
     position: relative;
     overflow: hidden;
   background-color: #283618;
@@ -419,7 +419,9 @@ img {
 
 }
 .addcart:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
+  color: rgb(247, 247, 225);
+  background: rgb(218, 108, 29);
 }
 
 
