@@ -72,6 +72,7 @@ p
     padding-bottom: 1em;
     padding-left: 10%;
 }
+
 button {
     appearance: button;
     text-rendering: auto;
@@ -88,12 +89,32 @@ button {
     box-sizing: border-box;
 }
 input[type=text] {
-  width: 100%;
+  width: 90%;
   margin-bottom: 1em;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 3px;
+  margin-right: 1rem;
+  background-color: #Fefae0;
 }
+/* checkout button styling */
+.btn {
+  background-color: #4a070c;
+  color: white;
+  padding: .5em;
+  margin: .5em;
+  margin-top: 1em;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #a5b868;
+}
+
 footer > p {
   font-size: 1em;
   padding: 0;
@@ -180,9 +201,11 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content max-content max-content 2em;
+  grid-template-rows: 3em max-content max-content max-content max-content max-content 2em;
   grid-template-areas:
     "nav"
+    "heading"
+    "cart"
     "billing"
     "payment"
     "submitting"
@@ -198,6 +221,7 @@ footer > p {
   padding: 0;
   padding-bottom: 1rem;
 }
+
 .icon-container {
   font-size: 24px;
 }
@@ -365,7 +389,9 @@ img {
   color: white;
   border: none;
   margin-bottom: 2em;
-  display: inline-block;
+  margin-left: 10%;
+  display: block;
+
 
 }
 .addcart:hover {
@@ -551,6 +577,44 @@ img {
   text-decoration: none;
 
 }
+#heading {
+ grid-area: heading;
+ display: block;
+ font-size: 1.5rem;
+}
+#heading > h2 {
+  padding: 0;
+  margin-left: .5em;
+}
+#cart {
+  display: block;
+  grid-area: cart;
+  margin: 2em;
+  margin-bottom: 0;
+  margin-top: 0em;
+  border-style: solid;
+  border-width: .2em;
+  border-radius: .3em;
+  padding: 1rem;
+  background-color: #Fefae0 ;
+}
+#cart > h4 {
+  padding-left: 0;
+}
+#cart > h4 > a {
+
+    text-decoration: none;
+    color: black;
+  }
+
+ #cart h4 > a:hover {
+    color: #4a070c ;
+    text-decoration: underline;
+  }
+  #cart h4 > a:visited {
+    color: #4a070c;
+    text-decoration: none;
+  }
 
 #billing {
   grid-area: billing;
@@ -568,7 +632,7 @@ img {
   grid-area: submitting;
   margin: 2em;
   margin-top: 0;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 
 }
 
@@ -662,7 +726,9 @@ footer > p {
             padding-top: 0%;
             padding-bottom: 5%;
         }
-
+        .addcart {
+          margin-left: 10%;
+        }
             
 
       
@@ -709,9 +775,27 @@ footer > p {
               "content3 content3 content3 content3 content3"
               "footer footer footer footer footer";
           }
-        
-
-        }
+          #checkout-container {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 3em max-content max-content max-content max-content 2em;
+            grid-template-areas:
+              "nav nav nav nav nav nav"
+              "heading heading heading heading heading heading"
+              "payment payment payment cart cart cart"
+              "billing billing billing billing billing billing"
+              "submitting submitting submitting submitting submitting submitting"
+              "footer footer footer footer footer footer";
+          }
+          #heading h2 {
+            font-size: 3rem;
+            margin: .75em;
+          }
+          #cart h4 {
+            font-size: 1.5em;
+          }
+          #payment h3 {
+            margin-top: 0rem;
+          }
 
 /* DESKTOP RESPONSIVENESS */
 @media screen and (min-width: 75em)
@@ -805,13 +889,32 @@ footer > p {
       "footer footer footer footer footer footer";
     
   }
-  
-
-
   #product-paragraph
   {
     max-width: 60%;
   }
+  #checkout-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3em max-content max-content max-content max-content 2em;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "heading heading heading heading heading heading"
+      "cart cart cart cart cart cart"
+      "billing billing billing payment payment payment"
+      "submitting submitting submitting submitting submitting submitting"
+      "footer footer footer footer footer footer";
+  }
+  #checkout-container h3 {
+    text-align: left;
+  }
+  #checkout-container label {
+    font-size: 1.5em;
+
+  }
+  #payment {
+    margin-top: 2em;
+  }
+
  
 
 }
