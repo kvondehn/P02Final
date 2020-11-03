@@ -859,7 +859,7 @@ footer > p {
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em max-content max-content 30em 30em 2em;
+      grid-template-rows: 3em max-content max-content 30em 2em;
       grid-template-areas: 
         "nav nav nav nav nav nav"
         "main main main main main main"
