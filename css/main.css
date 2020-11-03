@@ -13,7 +13,7 @@ body
 h1 
 {
     color: #Fefae0;
-    font-size: 3.85em ;
+    font-size: 3em ;
     text-align: left;
     padding-left: 10%;
     padding-top: .5em;
@@ -914,9 +914,8 @@ footer > p {
     grid-template-rows: 3em max-content 30em 10em 30em 2em;
     grid-template-areas:
       "nav nav nav nav nav nav"
-      "content0 content0 content0 content0 content0 content0"
-      "product1 product1 product1 product1 product1 product1"
-      "filler filler filler filler filler filler"
+      "content0 content0 content0 product1 product1 product1"
+      "content0 content0 content0 product1 product1 product1"
       "content1 content1 content2 content2 content3 content3"
       "footer footer footer footer footer footer";
     
@@ -962,6 +961,7 @@ footer > p {
   }
   #billing {
     margin-left:16% ;
+}
 }
   
 
