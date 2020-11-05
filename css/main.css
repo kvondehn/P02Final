@@ -364,18 +364,8 @@ footer > p {
                 color: #ffb342;
                 transition: ease-in-out 200ms;
             }
+            
 
-            nav a::before{
-                content:'';
-                display: block;
-                height: 2px;
-                /* 100% of actual list item */
-                background-color:#ffb342;
-                position: absolute;
-                top: 1.5rem;
-                width: 0%;
-                transition: all ease-in-out 200ms;
-            }
 
             /* .navigation a.active {
               color: black;
@@ -394,6 +384,7 @@ footer > p {
             .menuopen {
               display: inline-block;
               width: 100%;
+              padding-top: 1em;
             }
 
 #home-main
@@ -847,6 +838,10 @@ footer > p {
         } */
         /* TABLET RESPONSIVENESS  */
         @media screen and (min-width: 32em) {
+
+        /* nav a{
+          padding-bottom: 0.5em;
+        } */
           
         h1  {
                 font-size: 5em ;
@@ -984,6 +979,24 @@ footer > p {
     {
       padding-left: 7%;
     }
+
+    nav li
+    {
+      padding-bottom: 0;
+    }
+
+    
+    nav a::before{
+      content:'';
+      display: block;
+      height: 2px;
+      /* 100% of actual list item */
+      background-color:#ffb342;
+      position: absolute;
+      top: 1.5rem;
+      width: 0%;
+      transition: all ease-in-out 200ms;
+  }
 
     h1 
     {
