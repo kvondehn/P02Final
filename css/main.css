@@ -132,6 +132,8 @@ footer > p {
   height: 100vh;
   width: 100%;
   opacity: 95%;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 #navcart >  h3 {
   padding-left: 10%;
@@ -171,6 +173,18 @@ footer > p {
   #navcart > h3 {
     margin-right: 0;
     margin-top: 2rem;
+  }
+
+  .fa-shopping-cart
+  {
+    cursor: pointer;
+  }
+
+  .fa-shopping-cart:hover
+  {
+    transition: ease;
+    transition-duration: 100ms;
+    color: rgb(247, 238, 206);
   }
   
 #home-container
@@ -954,11 +968,21 @@ footer > p {
             width: 100%;
             opacity: 95%;
             left: 30%;
+            cursor: pointer;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            transition: all ease-in-out 200ms;
           }
+
         }
 /* DESKTOP RESPONSIVENESS */
 @media screen and (min-width: 75em)
 {
+
+    nav ul
+    {
+      padding-left: 7%;
+    }
+
     h1 
     {
       font-size: 7.5em;
@@ -1021,6 +1045,7 @@ footer > p {
     .addcart {
       margin-left: 20%;
     }
+
       
    
       footer > p {
@@ -1145,6 +1170,8 @@ footer > p {
   width: 100%;
   opacity: 95%;
   left: 60%;
+  cursor: pointer;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 #navcart > h3 {
   text-align: left;
