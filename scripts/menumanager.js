@@ -1,5 +1,5 @@
 
-function myFunction() {
+function navAnimation() {
     var x = document.getElementsByClassName("menuitem");
     console.log(x);
     for (i=0; i<x.length; i++){
@@ -11,4 +11,11 @@ function myFunction() {
         }
     }
 
+}
+function closeCart() {
+    document.getElementById("navcart").style.display="none"; 
+}
+
+function openCart() {
+    document.getElementById("navcart").style.display="inline";
 }

@@ -12,28 +12,48 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scripts/hamburger.js"> </script>
+    <script src="scripts/menumanager.js"> </script>
 
 
 </head>
 
 <body>
 
+  <div id="navcart">
+    <h3> Cart 
+    <span class="price" style="color:black">
+        <i class="fa fa-shopping-cart"></i>
+        <b>2</b>
+        </span>
+    </h3>
+    <div id="closecart"> <class="icon" onclick="closeCart()"> 
+      <i class="fa fa-times" style="color: black;"></i></a>
+    </div>
+
+
+    <h4><a href="product2.html">Pre Rolls</a> <span class="price">$15</span></h4>
+    <h4><a href="product1.html">Tangerine Dream</a> <span class="price">$12</span></h4>
+    <hr>
+    <h4>Total <span class="price" style="color:black"><b>$27</b></span></h4>
+</div>
+
     <div id="product-container">
-        <nav class="navigation" id="theNav">
+        <nav class="navigation">
             <ul>
-                <li class="menuitem menuclose"><a href="index.html">Home</a></li>
+              <li id="hamburger"> <a class="navicon" onclick="navAnimation()">
+                <i class="fa fa-bars"></i>
+               </a>
+          </li>
+                <li class="menuitem menuclose"><a href="index.html" class="active">Home</a></li>
                 <li class="menuitem menuclose"><a href="about.html">About</a></li>
-                <li class="menuitem menuclose"><a href="shop.html"class="active">Shop</a></li>
+                <li class="menuitem menuclose"><a href="shop.html">Shop</a></li>
                 <li class="menuitem menuclose"><a href="contact.html">Contact</a></li>
                 <li class="menuitem menuclose"><a href="checkout.html">Checkout</a></li>
-                <li id="hamburger"> <a href="#" class="icon" onclick="myFunction()">
-                      <i class="fa fa-bars"></i>
-                     </a>
-                </li>
             </ul>
         </nav>
-
+        <div id="opencart"> <a class="carticon" onclick="openCart()"> 
+          <i class="fa fa-shopping-cart" style="color: #bc6c25;"></i></a> 
+        </div>
 
         <div class="filler2">
         </div>
