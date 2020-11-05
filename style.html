@@ -184,60 +184,23 @@
         <h3>Buttons</h3>
 
         <div class="submit_btn">
-          <button class="btn">Submit</button>
-        </div>
-
-        <div class="submit_btn">
-          <button class="btn btn2">Add to Cart</button>
-        </div>
-
-        <div class="submit_btn">
-          <button class="btn btn2">Learn More </button>
+          <button class="btn btn2">Add to Cart </button>
         </div>
 
         <div class="submit_btn">
           <button class="btn btn3">Check Out </button>
         </div>
 
-        <code> /* TUTORIAL FOR BUTTON EFFECT RETRIEVED FROM
-          https://www.youtube.com/watch?v=MLfAW55_4cY */
-        
-          <br>
-          <br>
-          .btn
-            {
-                border: 1px solid dodgerblue;
-                border-radius: 8px;
-                background: none;
-                padding: 10px 20px;
-                font-size: 20px;
-                cursor: pointer;
-                margin: 10px;
-                transition: 0.8s;
-                position: relative;
-                overflow: hidden;
-            }
-            <br>
-          <br>
-          .btn::before
-          {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 0%;
-            background: dodgerblue;
-            /* z-index -1 means its behind the button fram */
-            z-index: -1;
-            transition: 0.8s;
-            transition-timing-function: ease;
-            bottom: 0;
-            /* eases in transition */
-          }
 
-        
-        
-        </code>
+        <pre>
+          <code> 
+            /* TUTORIAL FOR BUTTON EFFECT RETRIEVED FROM https://www.youtube.com/watch?v=MLfAW55_4cY */
+    
+            
+          
+          
+          </code>
+        </pre>
 
         <!-- <div class="reset_btn">
           <button class="btn rst1">Submit</button>
@@ -257,158 +220,6 @@
 
         <!-- Citation: TechincalCafe, HTML Tutorial 16 - Radio Buttons and Checkboxes (Form), Feb. 23 2012, Retrieved from https://www.youtube.com/watch?v=poEjvRJ6SAY&t=397s&ab_channel=TechnicalCafe, Sep. 22, 2020 -->
 
-        <form class="user_form" action="process.php" method="POST">
-
-          <fieldset class="account-info">
-
-            <label>
-              Username
-              <input type="text" name="username">
-            </label>
-            
-            <label>
-              Password
-              <input type="password" name="password">
-            </label>
-            
-          </fieldset>
-
-
-          <code>
-
-            <br>
-            /* 
-            <br>
-              BEGINNING OF STYLING WITH AID FROM CITED SOURCE:
-              <br>
-              <br>
-
-              Building Forms - Lesson 10, Retrieved from: https://learn.shayhowe.com/html-css/building-forms/
-
-              <br>
-            /*  */
-            <br>
-            <br>
-
-            form {
-              <br>
-              border: 1px solid #c6c7cc;
-              <br>
-              border-radius: 5px;
-              <br>
-              font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-              <br>
-              overflow: hidden;
-              <br>
-              width: 240px;
-              <br>
-            }
-            <br>
-            <br>
-          
-            input {
-              <br>
-              border-radius: 5px;
-              <br>
-              font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-              <br>
-              margin: 0;
-              <br>
-            }
-            <br>
-            <br>
-            
-            .account-info 
-            <br>
-            {
-              <br>
-              padding: 20px 20px 0 20px;
-              <br>
-            }
-            <br>
-            <br>
-            .account-info label 
-            <br>
-            {
-              <br>
-              color:black;
-              <br>
-              display: block;
-              <br>
-              font-weight: bold;
-              <br>
-              margin-bottom: 20px;
-              <br>
-            }
-            <br>
-            <br>
-            
-            .account-info input
-            <br> 
-            {
-              <br>
-              background: #fff;
-              <br>
-              border: 1px solid #c6c7cc;
-              <br>
-               box-shadow: inset 0 1px 1px rgba(3, 172, 202, 0.1);
-               <br>
-              color: #636466;
-              <br>
-              padding: 6px;
-              <br>
-              margin-top: 6px;
-              <br>
-              width: 100%;
-              <br>
-            }
-            <br>
-            <br>
-            /* END OF CITATION */
-            <br>
-            <br>
-            .account-info input:hover
-            <br>
-            {
-              <br>
-              background-color: gray;
-              <br>
-              opacity: 0.5;
-              <br>
-              transition: 0.5s ease;
-              <br>
-            }
-            <br>
-            <br>
-            .account-info input:focus
-            <br>
-            {
-              <br>
-              background-color: white;
-              <br>
-              opacity: 1;
-              <br>
-            }
-            <br>
-          </code>
-          
-          Over the Age of 19?:
-          <br>
-          <input type="radio" name="age"/> Yes
-          <br>
-          <input type="radio" name="age" /> No
-          <br>
-          <p></p>
-
-          Check all that Apply:
-          <p></p>
-          <input type="checkbox" name="cream"/> Cream
-          <p></p>
-          <input type="checkbox" name="sugar" /> Sugar
-          <p></p>
-          <!-- End of citation -->
-
-        </form>
 
       </section>
 
@@ -417,76 +228,9 @@
 
         <h3>Image as a Link (Altered Hover) </h3>
 
-        <!--Assistance retrieved from: https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML#:~:text=To%20use%20image%20as%20a,add%20the%20height%20and%20width. -->
 
-        <a href="https://newamsterdamcafe.com/menu/">
-          <div class="img_container">
-            <img class="weed_image" alt="homepage" src="https://post.healthline.com/wp-content/uploads/2019/04/Weed_Orange_1200x628-facebook.jpg"
-             width="420" height="250">
-            <div class="img_overlay"></div>
-          </div>
-        </a>
 
         <code>
-          <br>
-          .weed_image
-          <br>
-          {
-            <br>
-            display: block;
-            <br>
-          }
-          <br>
-          <br>
-          .img_container
-          <br>
-          {
-            position: relative;
-            <br>
-            width: 280px;
-            <br>
-          }
-          <br>
-          <br>
-          .img_overlay
-          <br>
-          {
-            <br>
-            position: absolute;
-            <br>
-            top: 0;
-            <br>
-            bottom: 0;
-            <br>
-            left: 0;
-            <br>
-            right: 0;
-            <br>
-            height: 100%;
-            <br>
-            width: 100%;
-            <br>
-            opacity: 0;
-            <br>
-            transition: 0.5s ease;
-            <br>
-            background-color: white;
-            <br>
-          }
-          <br>
-          <br>
-          .img_container:hover .img_overlay
-          <br>
-          {
-            <br>
-            opacity: 0.7;
-            <br>
-          }
-          <br>
-          <br>
-          source: 
-          <br>
-          w3schools.com, Image Overlay Fade, Retrieved from: https://www.w3schools.com/howto/howto_css_image_overlay.asp
           
         </code>
 
@@ -513,7 +257,7 @@
               </div>
 
               <div>
-                <p class="font_details">64px/7em | Roboto</p>
+                <p class="font_details">7em | Roboto</p>
               </div>
 
               <div>
@@ -528,7 +272,7 @@
               </div>
 
               <div>
-                <p class="font_details">54px/3.5em | Roboto</p>
+                <p class="font_details">3.5em | Roboto</p>
               </div>
 
               <div>
@@ -542,7 +286,7 @@
               </div>
 
               <div>
-                <p class="font_details">40px/2.25em | Roboto</p>
+                <p class="font_details">2.25em | Roboto</p>
               </div>
 
               <div>
@@ -556,7 +300,7 @@
               </div>
 
               <div>
-                <p class="font_details">36px/2em | Roboto</p>
+                <p class="font_details">2em | Roboto</p>
               </div>
 
               <div>
@@ -570,7 +314,7 @@
               </div>
 
               <div>
-                <p class="font_details">20px/1.25em | Roboto</p>
+                <p class="font_details">1.25em | Roboto</p>
               </div>
 
               <div>
@@ -586,7 +330,7 @@
         <h3 class="heading_margin">Paragraphs</h3>
 
         <div>
-          <p class="font_details">18px/1.125em | Roboto</p>
+          <p class="font_details">1.5em | Roboto</p>
         </div>
 
         <div>
@@ -603,31 +347,6 @@
        
  
        <code>
-          .about_subtitle
-          {
-              margin-right: auto;
-              margin-top: auto;
-              position: relative;
-              color: black;
-              font-size: 1.2rem;
-              line-height: 30px;
-              padding-bottom: 1rem;
-          }
-          <br>
-          <br>
-          /* respond at 1025 pixels when shrinking page */
-          <br>
-          <br>
-          @media (min-width: 1025px)
-          {
-              .about_subtitle 
-              {
-                  margin-right: 0;
-                  width: 50%;
-              }
-          }
-          <br>
-          <br>
 
         </code>
       </section>
@@ -702,62 +421,6 @@
 
         <section class="flex-container">
 
-          <div class="card">
-
-            <div id="argo">
-              <h4>Herbal<br> Vaporizer </h4>
-              <h5>Arizer ArGo</h5>
-              <p>$199.99</p>
-            </div>
-
-            <div>
-              <img src="images/argo.jpg" alt="Herbal Vaporizer Picture" class="product_image">
-            </div>
-
-            <div class="product_description">
-              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sint quo dicta eius inventore quia necessitatibus nihil ullam, ab dolores maxime quod delectus, ex nulla reprehenderit atque fugiat? Repudiandae, ipsa!</p>
-            </div>
-
-            <button class="btn btn3"> Add to Cart</button>
-            </div>
-
-          <div class="card">
-
-            <div id="preroll">
-              <h4> Pre<br> Rolls</h4>
-              <h5>White Widow Indica</h5>
-              <p>$8.99</p>
-            </div>
-
-            <div>
-              <img src="images/preroll.jpg" alt="Picture of pre-rolled joints" class="product_image">
-            </div>
-
-            <div class="product_description">
-              <p class="product_para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sint quo dicta eius inventore quia necessitatibus nihil ullam, ab dolores maxime quod delectus, ex nulla reprehenderit atque fugiat? Repudiandae, ipsa!</p>
-            </div>
-
-            <button class="btn btn3"> Add to Cart</button>
-          </div>
-
-          <div class="card">
-
-            <div id="sour_diesel">
-              <h4> Fresh<br> Flower </h4>
-              <h5>Sour Diesel</h5>
-              <p>$11.99/gram</p>
-            </div>
-
-            <div>
-              <img src="images/squareImage2.jpg" alt="Picture of marijuana plant" class="product_image">
-            </div>
-
-            <div class="product_description">
-              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sint quo dicta eius inventore quia necessitatibus nihil ullam, ab dolores maxime quod delectus, ex nulla reprehenderit atque fugiat? Repudiandae, ipsa!</p>
-            </div>
-
-            <button class="btn btn3"> Add to Cart</button>
-          </div>
         
         </section>
 
@@ -773,120 +436,7 @@
           w3Schools, How TO - Checkout Form. (n.d.). Retrieved October 09, 2020, from https://www.w3schools.com/howto/howto_css_checkout_form.asp
          -->
         
-        <div class="row">
 
-          <div class="col-75">
-
-            <div class="container">
-
-              <form action="/action_page.php">
-        
-                <div class="row">
-
-                  <div class="col-50">
-                    <h3>Billing Address</h3>
-
-                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Full Name">
-                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="email" name="email" placeholder="email">
-                    <label for="adr"><i class="fa fa-address-card-o"></i> 301 W Hastings St.</label>
-                    <input type="text" id="adr" name="address" placeholder="Street Address">
-                    <label for="city"><i class="fa fa-institution"></i> City</label>
-                    <input type="text" id="city" name="city" placeholder="Vancouver">
-        
-                    <div class="row">
-
-                      <div class="col-50">
-                        <label for="state">Province</label>
-                        <input type="text" id="state" name="state" placeholder="BC">
-                      </div>
-
-                      <div class="col-50">
-                        <label for="zip">Postal Code</label>
-                        <input type="text" id="zip" name="zip" placeholder="VJK A19">
-                      </div>
-                      
-                    </div>
-
-                  </div>
-        
-                  <div class="col-50">
-
-                    <h3>Payment</h3>
-
-                    <label for="fname">Accepted Cards</label>
-
-                    <div class="icon-container">
-                      <i class="fa fa-cc-visa" style="color:navy;"></i>
-                      <i class="fa fa-cc-amex" style="color:blue;"></i>
-                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                      <i class="fa fa-cc-discover" style="color:orange;"></i>
-                    </div>
-
-                    <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="Full Name">
-                    <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                    <label for="expmonth">Exp Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="Month">
-        
-                    <div class="row">
-
-                      <div class="col-50">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="Year">
-                      </div>
-
-                      <div class="col-50">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="999">
-                      </div>
-
-                    </div>
-                  </div>
-        
-                </div>
-
-                <label>
-                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                </label>
-                
-                <input type="submit" value="Proceed to Checkout" class="btn btn3">
-             
-              </form>
-            </div>
-          </div>
-        
-          <div class="col-25">
-
-            <div class="container">
-
-              <h3>Cart
-                <span class="price" style="color:black">
-
-                  <i class="fa fa-shopping-cart"></i>
-                  <b>3 items</b>
-
-                </span>
-              </h3>
-
-              <p><a href="#argo">Arizer Argo</a> <span class="price">$199.99</span></p>
-              <p><a href="#preroll">Pre Roll- White Widow</a> <span class="price">$8.99</span></p>
-              <p><a href="#sour_diesel">Sour Diesel- 1g</a> <span class="price">$11.99</span></p>
-              <hr>
-
-              <p>Total <span class="price" style="color:black"><b>$220.97</b></span></p>
-              <p>GST and PST<span class="price" style="color:black"><b>$26.52</b></span></p>
-
-              <hr>
-              <p>Order Total <span class="price" style="color:black"><b>$247.49</b></span></p>
-              
-              <input type="submit" value="Place Order" class="btn btn3">
-
-            </div>
-          </div>
-        </div>
 
       <!-- END OF FORM SECTION-->
 
@@ -895,6 +445,7 @@
          -->
 
       </section>
+
     </section>
 
     <!-- // COMBINED ELEMENTS SECTION -->
