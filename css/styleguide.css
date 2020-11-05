@@ -10,6 +10,7 @@ html{
 
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .body-container
@@ -191,35 +192,31 @@ h1, h2, h3, h4
   text-decoration: none;
 }
 
-h1{
-  font-size: 2rem;
-  font-family: 'Roboto Slab', sans-serif;
-}
-
 .title{
   font-size: 6em;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', serif;
   font-weight: 700;
 }
 
 h1{
-  font-size: 5em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-size: 7.5em;
+  font-family: 'Roboto', serif;
+  font-weight: 600;
 }
 
 h2{
-  font-size: 3.375em;
+  font-size: 3.5em;
+  font-weight: 500;
 }
 
 h3{
-  font-size: 2.5em;
-  font-weight: 300;
+  font-size: 2.25em;
+  font-weight: 600;
 }
 
 h4{
-  font-size: 2.25em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 450;
   margin-bottom: 5px;
 }
 
@@ -227,8 +224,8 @@ h5{
   font-size: 1.25em;
   margin-top: 20px;
   margin-bottom: 0;
-  font-weight: 400;
-  font-family: 'Roboto Slab', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 
