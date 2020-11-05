@@ -1146,6 +1146,16 @@ footer > p {
       "submitting submitting submitting submitting submitting submitting"
       "footer footer footer footer footer footer";
   }
+
+  #footer-container
+  {
+      
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 10em 10em;
+      grid-template-areas: 
+        "nav nav nav nav nav nav nav"
+        "main main main main main main"
+  }
   #checkout-container nav {
     margin-left: 0;
   }
@@ -1191,9 +1201,9 @@ footer > p {
 #navcart > h3 {
   text-align: left;
 }
+
+
+
+
+
 }
-
-
-
-
- 
