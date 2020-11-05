@@ -11,12 +11,8 @@ html{
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-}
-
-.body-container
-{
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 3em;
+  max-width: 90%;
 }
 
 .element {
