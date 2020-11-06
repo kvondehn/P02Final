@@ -87,7 +87,9 @@ input[type=text] {
   margin-right: 1rem;
   background-color: #Fefae0;
 }
-
+span {
+  width: fit-content;
+}
 .no-dec
 {
   text-decoration: none;
