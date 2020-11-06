@@ -50,7 +50,10 @@ header::after
     display: table;
     clear: both;
 }
-
+a {
+    text-decoration: underline;
+    color: black;
+}
 nav
 {
     float: right;
