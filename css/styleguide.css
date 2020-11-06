@@ -531,13 +531,13 @@ span.price
 
 .colour_container .block:nth-of-type(1)
 {
-    background-color: #606C38; 
+    background-color: #a5b868; 
     box-sizing: border-box;
 }
 
 .colour_container .block:nth-of-type(2) 
 {
-    background-color: #dda15e; 
+    background-color: #ffc56e; 
     box-sizing: border-box;
 }
 
@@ -549,7 +549,7 @@ span.price
 
 .sec_colour_container .block:nth-of-type(1)
 {
-  background-color: #283618; 
+  background-color: #df889d; 
     box-sizing: border-box;
 }
 
@@ -567,6 +567,7 @@ span.price
 #content1:hover, #content2:hover, #content3:hover, #product1:hover, #product2:hover, #product3:hover, #product4:hover, #product5:hover, #product6:hover
 
 {
+  
   transform: scale(1.01);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
