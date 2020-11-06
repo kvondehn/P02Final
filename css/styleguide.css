@@ -5,13 +5,16 @@
 
 html{
     font-size: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-  margin-left: 3em;
-  max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
 }
 
 .element {
