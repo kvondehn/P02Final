@@ -120,6 +120,11 @@ input[type=text] {
   background-color: #a5b868;
 }
 
+.no-dec
+{
+  text-decoration: none;
+}
+
 #navcart {
   display: none;
   position: fixed;
@@ -475,6 +480,33 @@ img {
   /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
   color: rgb(247, 247, 225);
   background: rgb(218, 108, 29);
+}
+
+.checkout-btn {
+  text-transform: capitalize;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem 2rem;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+  background-color:rgb(218, 108, 29) ;
+  color: white;
+  border: none;
+  margin-bottom: 2em;
+  margin-left: 10%;
+  display: block;
+
+
+}
+.checkout-btn:hover {
+  /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
+  color: rgb(247, 247, 225);
+  background:#283618;
 }
 
 
