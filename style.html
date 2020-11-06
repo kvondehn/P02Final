@@ -182,20 +182,65 @@
 
         <h3>Buttons</h3>
 
-        <div class="submit_btn">
-          <button class="btn btn2">Add to Cart </button>
-        </div>
+        <button class="addcart">Add to Cart </button>
 
-        <div class="submit_btn">
-          <button class="btn btn3">Check Out </button>
-        </div>
-
+        <button class="checkout">Checkout </button>
 
         <pre>
           <code> 
-            /* TUTORIAL FOR BUTTON EFFECT RETRIEVED FROM https://www.youtube.com/watch?v=MLfAW55_4cY */
+ /* TUTORIAL FOR BUTTON EFFECT RETRIEVED FROM https://www.youtube.com/watch?v=MLfAW55_4cY */
     
-            
+            .addcart
+{
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  background-color: #283618;
+  color: white;
+  border: none;
+  margin-bottom: 2em;
+  display: block;
+}
+ 
+  .addcart:hover
+  {
+    color: rgb(247, 247, 225);
+    background: rgb(218, 108, 29);
+  }
+
+.checkout
+{
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(218, 108, 29);
+  color:  rgb(247, 247, 225);
+  border: none;
+  margin-bottom: 2em;
+  display: block;
+}
+ 
+.checkout:hover
+{
+  color: white;
+  background: #283618;
+}
           
           
           </code>

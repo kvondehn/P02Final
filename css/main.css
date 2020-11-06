@@ -481,6 +481,32 @@ img {
   background: rgb(218, 108, 29);
 }
 
+.checkout
+{
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(218, 108, 29);
+  color:  rgb(247, 247, 225);
+  border: none;
+  margin-bottom: 2em;
+  display: block;
+}
+ 
+  .checkout:hover
+  {
+    color: white;
+    background: #283618;
+  }
+
 
 
 
@@ -732,7 +758,7 @@ img {
   margin-bottom: 0;
   margin-top: 0em;
   border-style: solid;
-  border-width: .2em;
+  border-width: .01em;
   border-radius: .3em;
   padding: 1rem;
   background-color: #Fefae0 ;
@@ -760,6 +786,7 @@ img {
   grid-area: billing;
   margin: 2em;
   margin-bottom: 0;
+  padding-bottom: 2em;
 }
 #payment {
   grid-area: payment;
@@ -937,8 +964,8 @@ footer > p {
             grid-template-areas:
               "nav nav nav nav nav nav"
               "heading heading heading heading heading heading"
-              "payment payment payment cart cart cart"
-              "billing billing billing billing billing billing"
+              "billing billing billing payment payment payment"
+              "billing billing billing cart cart cart"
               "submitting submitting submitting submitting submitting submitting"
               "footer footer footer footer footer footer";
           }
@@ -1141,8 +1168,8 @@ footer > p {
     grid-template-areas:
       "nav nav nav nav nav nav"
       "heading heading heading heading heading heading"
-      "billing billing billing cart cart cart"
       "billing billing billing payment payment payment"
+      "billing billing billing cart cart cart"
       "submitting submitting submitting submitting submitting submitting"
       "footer footer footer footer footer footer";
   }

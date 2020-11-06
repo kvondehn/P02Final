@@ -315,86 +315,58 @@ input {
 /* TUTORIAL FOR BUTTON EFFECT RETRIEVED FROM
 https://www.youtube.com/watch?v=MLfAW55_4cY */
 
-.btn 
+.addcart
 {
-    text-transform: capitalize;
-    border-radius: 1rem;
-    background: none;
-    padding: 1rem 2rem;
-    font-size: 1em;
-    font-family: sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-    color: #283618;
-    margin-bottom: 2rem;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  background-color: #283618;
+  color: white;
+  border: none;
+  margin-bottom: 2em;
+  display: block;
 }
  
-  .btn:hover
+  .addcart:hover
   {
-    color: #dda15e;
+    color: rgb(247, 247, 225);
+    background: rgb(218, 108, 29);
+  }
+
+.checkout
+{
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(218, 108, 29);
+  color:  rgb(247, 247, 225);
+  border: none;
+  margin-bottom: 2em;
+  display: block;
+}
+ 
+  .checkout:hover
+  {
+    color: white;
+    background: #283618;
   }
  
-  .btn::before
-  {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #4a070c;
-    /* z-index -1 means its behind the button fram */
-    z-index: -1;
-    transition: 0.8s;
-    transition-timing-function: ease;
-    bottom: 0;
-    /* eases in transition */
-  }
-  .btn::before
-  {
-    /* this decides where the effect starts from */
-    bottom: 0;
-  }
-
-  /* this decides how far the animation goes up to */
-  .btn:hover::before 
-  {
-    height: 180%;
-    /* we're choosing 180% so the transition has time to overlap */
-  }
-
-  .btn2
-  {
-    background-color: #283618;
-    color: white;
-    border: none;
-  }
-
-      .btn2:hover
-      {
-        background-color: white;
-        color: #283618;
-        transition: 0.5s;
-      }
-
-  .btn3
-  {
-    background-color:#bc6c25;
-    color: white;
-    border: none;
-
-  }
-
-      .btn3:hover
-      {
-        background-color: #dda15e;
-        color: white;
-        transition: 0.5s;
-      }
-
-
 .flex-container
 {
   display: flex;
