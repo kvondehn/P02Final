@@ -561,6 +561,93 @@ span.price
     background-color: #4a070c; 
     box-sizing: border-box;
 }
+#content1:hover, #content2:hover, #content3:hover, #product1:hover, #product2:hover, #product3:hover, #product4:hover, #product5:hover, #product6:hover
+
+{
+  transform: scale(1.01);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content-container1
+{
+  background-color: #ffc56e;
+  box-shadow: 2px 2px 5px #8a8a8a81;
+  border-right: black;
+  padding: 20px 20px 20px;
+}
+.content-container2 {
+    background-color:#a5b868 ;
+    padding: 20px 20px 20px;
+
+}
+.content-container3 {
+    background-color:#df889d ;
+    padding: 20px 20px 20px;
+
+}
+#content1
+{
+  background-image: url(../images/bud.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: content1;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
+}
+
+#content2
+{
+  background: url(../images/about2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: content2;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
+}
+
+#content3
+{
+  background: url(../images/squareImage3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: content3;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  display: block;
+  color: black;
+  text-decoration: none;
+
+}
+
+#listing-container {
+    display: grid;
+    height: max-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30em;
+    grid-template-areas: 
+    "content1 content2 content3";
+    text-align: center;
+}
 
 input[type=text] {
     width: 90%;
