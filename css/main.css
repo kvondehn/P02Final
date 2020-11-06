@@ -2,7 +2,10 @@
 
  zoom: 09
 } */
-
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 body
 {
   zoom: 100%;
@@ -117,13 +120,6 @@ input[type=text] {
   background-color: #a5b868;
 }
 
-footer > p {
-  font-size: 1em;
-  padding: 0;
-  padding-top: .5rem;
-  text-align: center;
-  margin: 0;
-}
 #navcart {
   display: none;
   position: fixed;
@@ -192,7 +188,7 @@ footer > p {
     display: grid;
     height: max-content;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em max-content max-content 20em 20em 20em 2em;
+    grid-template-rows: 3em max-content max-content 20em 20em 20em max-content;
     /* grid-gap: 0.25rem; */
     grid-template-areas:
       "nav"
@@ -208,7 +204,7 @@ footer > p {
       /* text-transform: uppercase; */
       font-size: 1rem;
       color: black; 
-      text-align: center;
+      /* text-align: center; */
 }
 
 #shop-container
@@ -216,7 +212,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content max-content 15em 15em 15em 15em 15em 15em 2em;
+  grid-template-rows: 3em max-content max-content 15em 15em 15em 15em 15em 15em max-content;
   /* grid-gap: 0.25rem; */
   grid-template-areas:
     "nav"
@@ -243,7 +239,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content 20em 15em 15em 15em 2em;
+  grid-template-rows: 3em max-content 20em 15em 15em 15em max-content;
   /* grid-gap: 0.25rem; */
   grid-template-areas:
     "nav"
@@ -266,7 +262,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content 20em 15em 15em 15em 2em;
+  grid-template-rows: 3em max-content 20em 15em 15em 15em max-content;
   /* grid-gap: 0.25rem; */
   grid-template-areas:
     "nav"
@@ -288,7 +284,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content max-content max-content max-content max-content 2em;
+  grid-template-rows: 3em max-content max-content max-content max-content max-content max-content;
   grid-template-areas:
     "nav"
     "heading"
@@ -801,17 +797,63 @@ img {
   padding: 20px 20px 20px;
 }
 
-footer
+.footerStyle
 {
-  background: lightgrey;
+  background: rgb(39, 39, 39);
   grid-area: footer;
+  color: white;
+  /* padding-left: 10%; */
+  text-align: center;
+  display: block;
+  padding-top: 1rem;
 }
-footer > p {
+
+.footerStyle > h4 {
   font-size: 1em;
   padding: 0;
-  padding-top: .5rem;
+}
+#footerLinks > h4{
+  padding: 0;
   text-align: center;
-  margin: 0;
+}
+#footerLinks > ul{
+  padding: 0;
+  
+}
+#footerLinks > ul > a {
+  font-size: 0.85em;
+  color: white;
+  text-decoration: underline;
+  font-weight: 400;
+}
+#footerContact > h4 {
+  padding: 0;
+  text-align: center;
+}
+#footerContact > p {
+  padding: 0;
+  padding-bottom: 1rem;
+  font-size: 0.80em;
+  max-width: 100%;
+  text-align: center;
+}
+#footerSocials h4{
+  padding: 0;
+  text-align: center;
+}
+
+.socialicon {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.socialicon > a{
+  font-size: 2rem;
+  text-align: center;
+  display: inline;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 /* HOVER FEATURE */
@@ -824,13 +866,12 @@ footer > p {
 }
 
 
-        footer
-        {
-          background: grey;
-          grid-area: footer;
-            border-radius: var(--main-radius);
-          padding-top: var(--main-padding);
-        }
+footer
+{
+  grid-area: footer;
+    border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
 
         /* .homepage
         {
@@ -879,7 +920,7 @@ footer > p {
           {
               
               grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 3em max-content max-content 20em 20em 20em 2em;
+              grid-template-rows: 3em max-content max-content 20em 20em 20em max-content;
               grid-template-areas: 
                 "nav nav nav nav nav"
                 "main main main main main"
@@ -894,7 +935,7 @@ footer > p {
           {
               
               grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 3em max-content max-content 30em 30em 30em 2em;
+              grid-template-rows: 3em max-content max-content 30em 30em 30em max-content;
               grid-template-areas: 
                 "nav nav nav nav nav nav"
                 "main main main main main main"
@@ -908,7 +949,7 @@ footer > p {
           #product-container
           {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 3em max-content 30em 20em 20em 20em 2em;
+            grid-template-rows: 3em max-content 30em 20em 20em 20em max-content;
             grid-template-areas:
               "nav nav nav nav nav"
               "content0 content0 content0 content0 content0"
@@ -921,7 +962,7 @@ footer > p {
           #product-container2
           {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 3em max-content 30em 20em 20em 20em 2em;
+            grid-template-rows: 3em max-content 30em 20em 20em 20em max-content;
             grid-template-areas:
               "nav nav nav nav nav"
               "content0 content0 content0 content0 content0"
@@ -933,7 +974,7 @@ footer > p {
           }
           #checkout-container {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 3em max-content max-content max-content max-content 2em;
+            grid-template-rows: 3em max-content max-content max-content max-content max-content;
             grid-template-areas:
               "nav nav nav nav nav nav"
               "heading heading heading heading heading heading"
@@ -968,8 +1009,41 @@ footer > p {
             cursor: pointer;
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
             transition: all ease-in-out 200ms;
+          }       
+          .footerStyle
+          {
+            padding-left: 0;
+            text-align: center;
+            
           }
+          
+          #footerLinks > h4{
+            text-align: center;
+          }
+          #footerLinks > ul{
+            text-align: center;
+          }
+          #footerLinks > ul > a {
+            text-align: center;
+          }
+          #footerContact > h4 {
+            text-align: center;
+          }
+          #footerContact > p {
+            padding: 0;
+            text-align: center;
 
+          }
+          #footerSocials h4{
+            text-align: center;
+            padding-bottom: 1rem;
+          }
+          .socialicon {
+            text-align: center;
+          }
+          .socialicon > a{
+            text-align: center;
+          }
         }
 /* DESKTOP RESPONSIVENESS */
 @media screen and (min-width: 75em)
@@ -1079,7 +1153,7 @@ footer > p {
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em max-content max-content 30em 2em;
+      grid-template-rows: 3em max-content max-content 30em max-content;
       grid-template-areas: 
         "nav nav nav nav nav nav"
         "main main main main main main"
@@ -1093,7 +1167,7 @@ footer > p {
   {
       
       grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 3em max-content max-content 30em 30em 2em;
+      grid-template-rows: 3em max-content max-content 30em 30em max-content;
       grid-template-areas: 
         "nav nav nav nav nav nav"
         "main main main main main main"
@@ -1106,7 +1180,7 @@ footer > p {
   #product-container
   {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3em 5em max-content 30em 5em 30em 2em;
+    grid-template-rows: 3em 5em max-content 30em 5em 30em max-content;
     grid-template-areas:
       "nav nav nav nav nav nav"
       "filler2 filler2 filler2 filler2 filler2 filler2"
@@ -1120,7 +1194,7 @@ footer > p {
   #product-container2
   {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3em 5em max-content 30em 5em 30em 2em;
+    grid-template-rows: 3em 5em max-content 30em 5em 30em max-content;
     grid-template-areas:
       "nav nav nav nav nav nav"
       "filler2 filler2 filler2 filler2 filler2 filler2"
@@ -1137,7 +1211,7 @@ footer > p {
   }
   #checkout-container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3em max-content max-content max-content max-content 2em;
+    grid-template-rows: 3em max-content max-content max-content max-content max-content;
     grid-template-areas:
       "nav nav nav nav nav nav"
       "heading heading heading heading heading heading"
@@ -1155,6 +1229,10 @@ footer > p {
   #checkout-container label {
     font-size: 1.5em;
     font-weight: 300;
+  }
+  #submitting {
+    margin-left: 40%;
+    margin-right: 40%;
   }
   #heading {
     margin-left: 8%;
@@ -1190,6 +1268,63 @@ footer > p {
 }
 #navcart > h3 {
   text-align: left;
+}
+.footerStyle
+{
+  padding-left: 0;
+  text-align: left;
+  align-items: stretch;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  
+}
+#footerLinks {
+  display: inline-table;
+  width: 28%;
+  padding-left: 10%;
+
+}
+#footerLinks > h4{
+  text-align: left;
+}
+#footerLinks > ul{
+  text-align: left;
+}
+#footerLinks > ul > a {
+  text-align: left;
+  font-size: 1.25em;
+}
+#footerContact {
+  display: inline-table;
+  width: 30%;
+
+
+}
+#footerContact > h4 {
+  text-align: left;
+}
+#footerContact > p {
+  padding: 0;
+  text-align: left;
+  font-size: 1.25em;
+  padding-bottom: 1rem;
+
+}
+#footerSocials {
+  display: inline-table;
+  width: 30%;
+
+}
+#footerSocials h4{
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.socialicon {
+  text-align: left;
+}
+.socialicon > a{
+  text-align: left;
+  font-size: 2.25em;
 }
 }
 
