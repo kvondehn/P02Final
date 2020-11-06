@@ -117,13 +117,6 @@ input[type=text] {
   background-color: #a5b868;
 }
 
-footer > p {
-  font-size: 1em;
-  padding: 0;
-  padding-top: .5rem;
-  text-align: center;
-  margin: 0;
-}
 #navcart {
   display: none;
   position: fixed;
@@ -192,7 +185,7 @@ footer > p {
     display: grid;
     height: max-content;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em max-content max-content 20em 20em 20em 2em;
+    grid-template-rows: 3em max-content max-content 20em 20em 20em max-content;
     /* grid-gap: 0.25rem; */
     grid-template-areas:
       "nav"
@@ -208,7 +201,7 @@ footer > p {
       /* text-transform: uppercase; */
       font-size: 1rem;
       color: black; 
-      text-align: center;
+      /* text-align: center; */
 }
 
 #shop-container
@@ -243,7 +236,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content 20em 15em 15em 15em 2em;
+  grid-template-rows: 3em max-content 20em 15em 15em 15em max-content;
   /* grid-gap: 0.25rem; */
   grid-template-areas:
     "nav"
@@ -266,7 +259,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content 20em 15em 15em 15em 2em;
+  grid-template-rows: 3em max-content 20em 15em 15em 15em max-content;
   /* grid-gap: 0.25rem; */
   grid-template-areas:
     "nav"
@@ -288,7 +281,7 @@ footer > p {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content max-content max-content max-content max-content 2em;
+  grid-template-rows: 3em max-content max-content max-content max-content max-content max-content;
   grid-template-areas:
     "nav"
     "heading"
@@ -480,32 +473,6 @@ img {
   color: rgb(247, 247, 225);
   background: rgb(218, 108, 29);
 }
-
-.checkout
-{
-  text-transform: capitalize;
-  border-radius: 1rem;
-  background: none;
-  padding: 1rem 2rem;
-  font-size: 1em;
-  font-family: sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.5s;
-  position: relative;
-  overflow: hidden;
-  background-color: rgb(218, 108, 29);
-  color:  rgb(247, 247, 225);
-  border: none;
-  margin-bottom: 2em;
-  display: block;
-}
- 
-  .checkout:hover
-  {
-    color: white;
-    background: #283618;
-  }
 
 
 
@@ -758,7 +725,7 @@ img {
   margin-bottom: 0;
   margin-top: 0em;
   border-style: solid;
-  border-width: .01em;
+  border-width: .2em;
   border-radius: .3em;
   padding: 1rem;
   background-color: #Fefae0 ;
@@ -786,7 +753,6 @@ img {
   grid-area: billing;
   margin: 2em;
   margin-bottom: 0;
-  padding-bottom: 2em;
 }
 #payment {
   grid-area: payment;
@@ -830,16 +796,73 @@ img {
 
 footer
 {
-  background: lightgrey;
+  background: rgb(39, 39, 39);
   grid-area: footer;
+  color: white;
 }
-footer > p {
+#footerLinks > h4  {
   font-size: 1em;
   padding: 0;
-  padding-top: .5rem;
-  text-align: center;
+  padding-left: 10%;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  display: block;
+}
+#footerContact > h4  {
+  font-size: 1em;
+  padding: 0;
+  padding-left: 10%;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+#footerSocials > h4  {
+  font-size: 1em;
+  padding: 0;
+  padding-left: 10%;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+#footerLinks > ul {
+  padding-left: 10%;
+  padding-bottom: .5rem;
   margin: 0;
 }
+
+#footerLinks > ul > a{
+  color: white;
+  text-decoration: underline;
+  margin-top: .5rem;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 300;
+  
+
+}
+
+#footerContact > p {
+  font-size: 0.75em;
+  padding-left: 10%;
+  padding-top: .2rem;
+  text-align: left;
+  margin: 0;
+}
+
+.socialicon {
+  display: block;
+  font-weight: 100;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.socialicon > a{
+  font-size: 2rem;
+  text-align: left;
+  display: inline;
+  padding-left: 10%;
+
+
+}
+
 
 /* HOVER FEATURE */
 
@@ -851,13 +874,12 @@ footer > p {
 }
 
 
-        footer
-        {
-          background: grey;
-          grid-area: footer;
-            border-radius: var(--main-radius);
-          padding-top: var(--main-padding);
-        }
+footer
+{
+  grid-area: footer;
+    border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
 
         /* .homepage
         {
@@ -906,7 +928,7 @@ footer > p {
           {
               
               grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 3em max-content max-content 20em 20em 20em 2em;
+              grid-template-rows: 3em max-content max-content 20em 20em 20em max-content;
               grid-template-areas: 
                 "nav nav nav nav nav"
                 "main main main main main"
@@ -921,7 +943,7 @@ footer > p {
           {
               
               grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-              grid-template-rows: 3em max-content max-content 30em 30em 30em 2em;
+              grid-template-rows: 3em max-content max-content 30em 30em 30em max-content;
               grid-template-areas: 
                 "nav nav nav nav nav nav"
                 "main main main main main main"
@@ -935,7 +957,7 @@ footer > p {
           #product-container
           {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 3em max-content 30em 20em 20em 20em 2em;
+            grid-template-rows: 3em max-content 30em 20em 20em 20em max-content;
             grid-template-areas:
               "nav nav nav nav nav"
               "content0 content0 content0 content0 content0"
@@ -948,7 +970,7 @@ footer > p {
           #product-container2
           {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 3em max-content 30em 20em 20em 20em 2em;
+            grid-template-rows: 3em max-content 30em 20em 20em 20em max-content;
             grid-template-areas:
               "nav nav nav nav nav"
               "content0 content0 content0 content0 content0"
@@ -960,12 +982,12 @@ footer > p {
           }
           #checkout-container {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 3em max-content max-content max-content max-content 2em;
+            grid-template-rows: 3em max-content max-content max-content max-content max-content;
             grid-template-areas:
               "nav nav nav nav nav nav"
               "heading heading heading heading heading heading"
-              "billing billing billing payment payment payment"
-              "billing billing billing cart cart cart"
+              "payment payment payment cart cart cart"
+              "billing billing billing billing billing billing"
               "submitting submitting submitting submitting submitting submitting"
               "footer footer footer footer footer footer";
           }
@@ -996,6 +1018,75 @@ footer > p {
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
             transition: all ease-in-out 200ms;
           }
+        
+          #footerStyle {
+            text-align: center;
+          }
+        #footerLinks {
+          text-align: center;
+        }
+        #footerContact  {
+          padding-right: 10%;
+        }
+         #footerLinks > h4  {
+          padding: 0;
+          padding-left: 10%;
+          padding-top: 1rem;
+          padding-bottom: .5rem;
+        }
+        #footerLinks > ul {
+          padding: 0;
+          padding-left: 10%;
+          padding-bottom: .5rem;
+          margin: 0;
+        }
+        #footerSocials {
+          float: none;
+        }
+        /* #footerSocials > h4  {
+          font-size: 1em;
+          padding: 0;
+          padding-left: 10%;
+          padding-top: 1rem;
+          padding-bottom: .5rem;
+        }
+        */
+
+         
+        /* #footerLinks > ul > a{
+          color: white;
+          text-decoration: underline;
+          margin-top: .5rem;
+          text-align: left;
+          font-size: 0.85rem;
+          font-weight: 300;
+          
+        
+        }
+         */
+        /* #footerContact > p {
+          font-size: 0.75em;
+          padding-left: 10%;
+          padding-top: .2rem;
+          text-align: left;
+          margin: 0;
+        }
+        
+        .socialicon {
+          display: block;
+          font-weight: 100;
+          text-align: left;
+          padding-bottom: 1rem;
+        }
+        .socialicon > a{
+          font-size: 2rem;
+          text-align: left;
+          display: inline;
+          padding-left: 10%;
+        
+        
+        } */
+        
 
         }
 /* DESKTOP RESPONSIVENESS */
@@ -1168,20 +1259,10 @@ footer > p {
     grid-template-areas:
       "nav nav nav nav nav nav"
       "heading heading heading heading heading heading"
+      "billing billing billing cart cart cart"
       "billing billing billing payment payment payment"
-      "billing billing billing cart cart cart"
-      "billing billing billing cart cart cart"
+      "submitting submitting submitting submitting submitting submitting"
       "footer footer footer footer footer footer";
-  }
-
-  #footer-container
-  {
-      
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 10em 10em;
-      grid-template-areas: 
-        "nav nav nav nav nav nav nav"
-        "main main main main main main"
   }
   #checkout-container nav {
     margin-left: 0;
@@ -1192,6 +1273,10 @@ footer > p {
   #checkout-container label {
     font-size: 1.5em;
     font-weight: 300;
+  }
+  #submitting {
+    margin-left: 40%;
+    margin-right: 40%;
   }
   #heading {
     margin-left: 8%;
@@ -1229,8 +1314,9 @@ footer > p {
   text-align: left;
 }
 
-
-
-
-
 }
+
+
+
+
+ 
