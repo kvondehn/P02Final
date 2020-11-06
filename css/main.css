@@ -849,7 +849,7 @@ img {
   padding-bottom: 1rem;
 }
 .socialicon > a{
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   display: inline;
   padding-right: 5%;
@@ -1043,8 +1043,35 @@ footer
           }
           .socialicon > a{
             text-align: center;
+            font-size: 2rem;
           }
         }
+        
+        /* #footerContact > p {
+          font-size: 0.75em;
+          padding-left: 10%;
+          padding-top: .2rem;
+          text-align: left;
+          margin: 0;
+        }
+        
+        .socialicon {
+          display: block;
+          font-weight: 100;
+          text-align: left;
+          padding-bottom: 1rem;
+        }
+        .socialicon > a{
+          font-size: 2rem;
+          text-align: left;
+          display: inline;
+          padding-left: 10%;
+        
+        
+        } */
+        
+
+        
 /* DESKTOP RESPONSIVENESS */
 @media screen and (min-width: 75em)
 {
