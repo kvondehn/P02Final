@@ -455,6 +455,18 @@ b
   font-weight: bold;
 }
 
+footer ul li
+{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer ul li a
+{
+  text-decoration: none;
+  color: white;
+}
+
 .checkout-btn {
   text-transform: capitalize;
     border-radius: 1rem;
