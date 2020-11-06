@@ -154,15 +154,16 @@ input[type=text] {
     color: #4a070c;
     text-decoration: none;
   }
-  #navcart hr {
+  /* #navcart hr {
     margin-left: 10%;
-  }
+  } */
   #opencart {
     z-index: 2;
     font-size: 1.5em;
     position: fixed;
     right: 15%;
     top: 0.6em;
+    cursor: pointer;
   }
   #closecart {
     z-index: 3;
@@ -176,18 +177,18 @@ input[type=text] {
     margin-top: 2rem;
   }
 
-  .fa-shopping-cart
+  /* .fa-shopping-cart
   {
     cursor: pointer;
-  }
+  } */
 
-  .fa-shopping-cart:hover
+  /* .fa-shopping-cart:hover
   {
     transition: ease;
     transition-duration: 100ms;
     color: rgb(247, 238, 206);
   }
-  
+   */
 #home-container
 {
     display: grid;
@@ -289,14 +290,13 @@ input[type=text] {
   display: grid;
   height: max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em max-content max-content max-content max-content max-content max-content;
+  grid-template-rows: 3em max-content max-content max-content max-content max-content;
   grid-template-areas:
     "nav"
     "heading"
     "cart"
-    "billing"
     "payment"
-    "submitting"
+    "billing"
     "footer";
 
     font-family: "Roboto", sans-serif;
@@ -504,7 +504,24 @@ b
   margin-bottom: 2em;
   margin-left: 10%;
   display: block;
-
+}
+.checkout-btn2 {
+  text-transform: capitalize;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem 2rem;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+background-color:rgb(218, 108, 29) ;
+color: white;
+border: none;
+margin-bottom: 2em;
+display: block;
 
 }
 .checkout-btn:hover {
@@ -1305,6 +1322,7 @@ footer
   #payment {
     margin-top: 2em;
     margin-right: 16%;
+    padding-bottom: 2rem;
   }
   #cart {
     margin-right: 8%;
