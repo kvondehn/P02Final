@@ -517,11 +517,12 @@ b
   transition: 0.5s;
   position: relative;
   overflow: hidden;
-background-color:rgb(218, 108, 29) ;
-color: white;
-border: none;
-margin-bottom: 2em;
-display: block;
+  background-color:rgb(218, 108, 29) ;
+  color: white;
+  border: none;
+  margin-bottom: 2rem;
+  display: block;
+  margin-top: 2rem;
 
 }
 .checkout-btn:hover {
@@ -813,7 +814,7 @@ display: block;
 #payment {
   grid-area: payment;
   margin: 2em;
-  margin-top: 0;
+  margin-top: 2em;
   margin-bottom: 0;
 
 }
@@ -1046,8 +1047,8 @@ footer
           #cart h4 {
             font-size: 1.5em;
           }
-          #payment h3 {
-            margin-top: 0rem;
+          #payment {
+            margin-top: 0;
           }
           #navcart {
             display: none;
@@ -1330,6 +1331,7 @@ footer
   }
   #billing {
     margin-left:16% ;
+    margin-top: 0;
 }
 #filler #filler2 {
   background-color: #Fefae0;
