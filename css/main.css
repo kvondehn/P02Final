@@ -473,13 +473,17 @@ img {
   margin-bottom: 2em;
   margin-left: 10%;
   display: block;
-
-
 }
+
 .addcart:hover {
   /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
   color: rgb(247, 247, 225);
   background: rgb(218, 108, 29);
+}
+
+b
+{
+  font-weight: bold;
 }
 
 .checkout-btn {
