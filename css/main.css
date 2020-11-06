@@ -349,11 +349,10 @@ input[type=text] {
                 transition: ease-in-out 200ms;
             }
             
-
-
-            .navigation a.active {
-              color: black;
-            }
+           .navigation a.active {
+              color:black;
+              font-weight: 500;
+           }
 
             nav a:hover::before{
                 width:100%;
