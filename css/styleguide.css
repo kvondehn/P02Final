@@ -137,7 +137,7 @@ nav a:hover::before
     {
         margin-left: 5%;
         margin-right: 5%;
-        width: 1005;
+        width: 100%;
     }
 }
 
@@ -153,7 +153,7 @@ nav a:hover::before
 
 a:focus
 {
-  background-color: none;
+  background-color: white;
 } 
 
 
@@ -218,7 +218,7 @@ h3{
 
 h4{
   font-size: 2em;
-  font-weight: 450;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 
@@ -652,6 +652,9 @@ span.price
     "content1 content2 content3";
     text-align: center;
 }
+span {
+    width: fit-content;
+  }
 
 input[type=text] {
     width: 90%;
